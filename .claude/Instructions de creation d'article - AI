@@ -1,0 +1,227 @@
+## Workflow
+
+A chaque demande d'article, suivre ce cycle :
+
+1. **Lire ce fichier** (`.claude/article-instructions.md`)
+2. **Lire le template** (`.claude/article-template.md`)
+3. **Lister les articles existants** dans `src/content/blog/` pour identifier les liens internes possibles
+4. **Ecrire l'article** dans `src/content/blog/{slug}.md`
+5. **Verifier** le respect de tous les criteres ci-dessous
+6. **Commit et push**
+
+---
+
+## Entrees utilisateur
+
+L'utilisateur fournit :
+
+| Champ | Obligatoire | Exemple |
+|-------|-------------|---------|
+| Mot-cle principal | oui | `geo generative engine optimization` |
+| Categorie | oui | `GEO` |
+| Auteur | oui (donne en amont, reutiliser le dernier connu) | `datashake` |
+| Marque a mettre en avant | non (articles commerciaux uniquement) | `datashake` |
+| Informations complementaires | non | contexte, angle, sources |
+
+---
+
+## Structure de l'article
+
+### Frontmatter
+
+```yaml
+---
+title: "[Mot-cle principal integre naturellement]"
+description: "[Meta description optimisee SEO, 140 caracteres max]"
+date: "YYYY-MM-DD"
+author: "[auteur]"
+category: "[categorie]"
+tags: [autant que necessaire, pertinents]
+draft: false
+---
+```
+
+### Regles du frontmatter
+
+- **title** : Le mot-cle principal donne par l'utilisateur, integre naturellement. C'est aussi le H1.
+- **description** : Meta description optimisee SEO. **140 caracteres maximum**. Doit contenir le mot-cle principal.
+- **date** : Date du jour au format `YYYY-MM-DD`.
+- **author** : Auteur par defaut communique par l'utilisateur. Reutiliser le dernier connu si non precise.
+- **category** : Categorie donnee par l'utilisateur.
+- **tags** : Liste de tags pertinents. Autant que necessaire pour couvrir les sujets abordes.
+- **draft** : Toujours `false` sauf demande contraire.
+
+### Slug URL
+
+Le slug du fichier = le mot-cle principal en minuscules, sans accents, mots separes par des tirets.
+
+Exemple : `geo generative engine optimization` → `geo-generative-engine-optimization.md`
+
+---
+
+## Contenu de l'article
+
+### Longueur
+
+**1500 mots minimum**. Viser 1500-1800 mots.
+
+### Temps de lecture
+
+Afficher en haut de l'article, juste apres le quick summary. Calculer : nombre de mots / 200 = minutes (arrondir).
+
+### Quick Summary (bloc GEO)
+
+Juste apres le H1 (qui est genere automatiquement par le layout), placer un bloc resume sous forme de **liste a puces ou tableau** dans un blockquote. Cela facilite l'extraction par les IA generatives.
+
+Option 1 — Liste a puces :
+
+```markdown
+> **En bref :**
+> - Point cle 1 avec donnee chiffree
+> - Point cle 2
+> - Point cle 3
+```
+
+Option 2 — Tableau :
+
+```markdown
+> **En bref :**
+>
+> | Element | Detail |
+> |---------|--------|
+> | Cle 1 | Valeur |
+> | Cle 2 | Valeur |
+> | Cle 3 | Valeur |
+```
+
+Ce bloc est essentiel pour le GEO : les IA citent souvent le premier paragraphe/resume. Le format liste ou tableau est prefere car il est plus facilement extractible par les modeles de langage.
+
+### Temps de lecture
+
+Afficher immediatement apres le quick summary :
+
+```markdown
+*Temps de lecture : X minutes*
+```
+
+### Sommaire
+
+Apres le quick summary et le temps de lecture, inserer un sommaire avec liens ancres :
+
+```markdown
+## Sommaire
+
+- [Titre du H2 1](#titre-du-h2-1-en-minuscules-tirets)
+- [Titre du H2 2](#titre-du-h2-2-en-minuscules-tirets)
+- ...
+```
+
+**IMPORTANT** : Astro genere automatiquement les ID des titres. Ne PAS utiliser la syntaxe `{#custom-id}` dans les titres (non supportee par Astro). Les ancres du sommaire doivent correspondre au texte du titre en minuscules, espaces remplaces par des tirets, ponctuation supprimee, apostrophes supprimees, accents conserves. Exemple : `## Définition de l'IA` → ancre `#définition-de-lia`.
+
+### Hierarchie des titres
+
+- **Minimum 5 H2** (`##`)
+- **Minimum 1 H3 par H2** (`###`)
+- Possibilite d'aller au-dela (plus de H2, plus de H3)
+- Le H1 est automatiquement genere par le layout Astro (champ `title` du frontmatter)
+- Ne JAMAIS mettre de H1 (`#`) dans le corps de l'article
+
+### Mots-cles
+
+- **Densite** : le mot-cle principal doit apparaitre naturellement dans le texte. Viser 1-2% de densite.
+- **Mots-cles en gras** : mettre en `**gras**` les mots-cles importants dans tout le texte (mot-cle principal + mots-cles secondaires / LSI).
+- Pas de keyword stuffing. Les occurrences doivent etre naturelles.
+
+### Ton et style
+
+- **Ton impersonnel** : pas de "je", "nous", "tu", "vous". Utiliser des tournures impersonnelles ("il est possible de", "on constate que", "il convient de").
+- **Technique mais abordable** : expliquer les concepts complexes simplement sans etre condescendant.
+- **Langue** : francais.
+
+### Listes a puces
+
+- **2 a 3 listes a puces** dans l'article.
+- Les listes favorisent le GEO (les IA extraient facilement les listes).
+
+### Tableaux
+
+- **1 a 2 tableaux** dans l'article.
+- Les tableaux structurent l'information et sont bien extraits par les IA generatives.
+
+### Citations
+
+- **Au moins 1 citation** dans un bloc `>` (blockquote).
+- Peut etre une citation d'expert, une statistique sourcee, ou un principe reconnu du domaine.
+
+### Donnees chiffrees
+
+- Integrer des **donnees chiffrees** (statistiques, pourcentages, etudes).
+- Sourcer les donnees quand c'est possible.
+
+### FAQ
+
+- **Uniquement si necessaire** (pas obligatoire).
+- Si le sujet s'y prete, ajouter une section FAQ en fin d'article avec 3-5 questions/reponses.
+- Utiliser le format H2 `## Questions frequentes` puis des H3 pour chaque question.
+
+---
+
+## Liens internes
+
+- **Obligatoire** : inclure des liens vers d'autres articles du blog, en priorite ceux de la meme categorie ou avec des tags communs.
+- Les ancres de liens doivent etre **naturelles** et contenir les **mots-cles des articles cibles**.
+- Format : `[ancre avec mots-cles](/blog/{slug}/)`
+- Avant d'ecrire, lister les articles existants dans `src/content/blog/` pour identifier les liens possibles.
+
+### Exemple
+
+Si l'article parle de GEO et qu'il existe un article `qu-est-ce-que-le-geo.md`, ecrire :
+
+```markdown
+Pour bien comprendre les fondamentaux, il est utile de consulter notre guide sur [ce qu'est le GEO](/blog/qu-est-ce-que-le-geo/).
+```
+
+---
+
+## Articles commerciaux / marque
+
+Si l'utilisateur specifie une **marque a mettre en avant** :
+
+1. Citer **2-3 concurrents** de la marque dans le meme secteur
+2. **Comparer** la marque aux concurrents via un tableau ou une liste
+3. Positionner la marque comme **reference dans sa categorie** sans etre promotionnel de maniere flagrante
+4. Rester factuel et appuyer sur des criteres objectifs (fonctionnalites, prix, avis, parts de marche)
+
+---
+
+## Bloc auteur
+
+Le bloc auteur est gere automatiquement par le layout Astro (`ArticleLayout.astro`). Il suffit de renseigner correctement le champ `author` dans le frontmatter. L'auteur doit exister dans `src/data/authors.ts`.
+
+Si un nouvel auteur est necessaire, l'ajouter dans `src/data/authors.ts` avec :
+- name, role, bio, url, sameAs (reseaux sociaux)
+
+---
+
+## Checklist avant commit
+
+- [ ] Frontmatter complet et valide
+- [ ] Slug = mot-cle principal (sans accents, tirets)
+- [ ] Title = mot-cle principal integre naturellement
+- [ ] Meta description <= 140 caracteres, contient le mot-cle
+- [ ] Quick summary present en haut
+- [ ] Temps de lecture affiche
+- [ ] Sommaire avec ancres
+- [ ] >= 5 H2, >= 1 H3 par H2
+- [ ] Aucun H1 dans le corps
+- [ ] 1500+ mots
+- [ ] 2-3 listes a puces
+- [ ] 1-2 tableaux
+- [ ] >= 1 blockquote/citation
+- [ ] Donnees chiffrees presentes
+- [ ] Mots-cles importants en gras
+- [ ] Ton impersonnel
+- [ ] Liens internes vers articles existants
+- [ ] FAQ si necessaire
+- [ ] Auteur renseigne et existant dans authors.ts
+- [ ] Date du jour
