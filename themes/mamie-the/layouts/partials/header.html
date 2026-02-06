@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="header-inner">
-    <a href="{{ .Site.BaseURL }}" class="logo">
+    <a href="{{ "/" | relURL }}" class="logo">
       <span class="logo-icon">&#9749;</span>
       <span class="logo-text">Mamie-Thé</span>
     </a>
@@ -10,7 +10,7 @@
       </button>
       <ul class="nav-list">
         {{ range .Site.Menus.main }}
-        <li><a href="{{ .URL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a></li>
+        <li><a href="{{ .URL | relURL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a></li>
         {{ end }}
       </ul>
     </nav>

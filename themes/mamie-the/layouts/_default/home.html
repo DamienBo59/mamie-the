@@ -7,7 +7,7 @@
     <div class="hero-badge">Daily Dose of Tea</div>
     <h1 class="hero-title">L'ART DE L'INFUSION,<br>LES SECRETS DE NOS<br>GRANDS-MÈRES</h1>
     <p class="hero-subtitle">Plongez dans l'univers fascinant du thé. Des rituels du Matcha aux remèdes oubliés, découvrez nos guides, tests et conseils pour sublimer votre pause quotidienne.</p>
-    <a href="/blog/" class="btn btn-primary">Explorez le blog</a>
+    <a href="{{ "blog/" | relURL }}" class="btn btn-primary">Explorez le blog</a>
   </div>
 </section>
 
@@ -29,22 +29,22 @@
   <div class="section-inner">
     <h2 class="section-title">Nos Catégories</h2>
     <div class="categories-grid">
-      <a href="/categories/thes-verts/" class="category-card">
+      <a href="{{ "categories/thes-verts/" | relURL }}" class="category-card">
         <div class="category-icon">&#127811;</div>
         <h3>Thés Verts</h3>
         <p>Du Sencha au Matcha, explorez les thés verts et leurs bienfaits millénaires.</p>
       </a>
-      <a href="/categories/thes-noirs/" class="category-card">
+      <a href="{{ "categories/thes-noirs/" | relURL }}" class="category-card">
         <div class="category-icon">&#9749;</div>
         <h3>Thés Noirs</h3>
         <p>Earl Grey, Assam, Darjeeling... Les grands classiques qui réchauffent l'âme.</p>
       </a>
-      <a href="/categories/tisanes/" class="category-card">
+      <a href="{{ "categories/tisanes/" | relURL }}" class="category-card">
         <div class="category-icon">&#127807;</div>
         <h3>Tisanes</h3>
         <p>Camomille, verveine, tilleul... Les remèdes de grand-mère pour tous les maux.</p>
       </a>
-      <a href="/categories/rituels-et-conseils/" class="category-card">
+      <a href="{{ "categories/rituels-et-conseils/" | relURL }}" class="category-card">
         <div class="category-icon">&#128218;</div>
         <h3>Rituels & Conseils</h3>
         <p>Température, temps d'infusion, accessoires... Devenez un expert du thé.</p>
@@ -73,7 +73,7 @@
       {{ end }}
     </div>
     <div class="section-cta">
-      <a href="/blog/" class="btn btn-outline">Voir tous les articles</a>
+      <a href="{{ "blog/" | relURL }}" class="btn btn-outline">Voir tous les articles</a>
     </div>
   </div>
 </section>
