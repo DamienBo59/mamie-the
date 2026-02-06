@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - claude/hugo-static-site-HZd2t
 
 permissions:
   contents: read
