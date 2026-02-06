@@ -1,0 +1,26 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a href="{{ .Site.BaseURL }}" class="logo">
+      <span class="logo-icon">&#9749;</span>
+      <span class="logo-text">Mamie-Thé</span>
+    </a>
+    <nav class="main-nav">
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-list">
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+  const nav = document.querySelector('.nav-list');
+  const expanded = this.getAttribute('aria-expanded') === 'true';
+  this.setAttribute('aria-expanded', !expanded);
+  nav.classList.toggle('open');
+});
+</script>

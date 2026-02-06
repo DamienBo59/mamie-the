@@ -1,0 +1,50 @@
+baseURL = 'https://mamie-the.fr/'
+languageCode = 'fr'
+defaultContentLanguage = 'fr'
+title = 'Mamie-Thé'
+theme = 'mamie-the'
+
+[params]
+  description = "L'art de l'infusion, les secrets de nos grands-mères. Plongez dans l'univers fascinant du thé."
+  tagline = "L'art de l'infusion, les secrets de nos grands-mères"
+
+[menus]
+  [[menus.main]]
+    name = 'Accueil'
+    url = '/'
+    weight = 1
+  [[menus.main]]
+    name = 'Thés verts'
+    url = '/categories/thes-verts/'
+    weight = 2
+  [[menus.main]]
+    name = 'Thés noirs'
+    url = '/categories/thes-noirs/'
+    weight = 3
+  [[menus.main]]
+    name = 'Tisanes'
+    url = '/categories/tisanes/'
+    weight = 4
+  [[menus.main]]
+    name = 'Rituels & Conseils'
+    url = '/categories/rituels-et-conseils/'
+    weight = 5
+  [[menus.main]]
+    name = 'Le Blog'
+    url = '/blog/'
+    weight = 6
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ['html']
+  section = ['html']
+  taxonomy = ['html']
+  term = ['html']

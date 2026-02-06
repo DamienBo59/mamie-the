@@ -1,0 +1,24 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-icon">&#9749;</span>
+      <span class="logo-text">Mamie-Thé</span>
+      <p class="footer-tagline">L'art de l'infusion, les secrets de nos grands-mères</p>
+    </div>
+    <div class="footer-nav">
+      <h4>Catégories</h4>
+      <ul>
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="footer-info">
+      <h4>À propos</h4>
+      <p>Plongez dans l'univers fascinant du thé. Des rituels du Matcha aux remèdes oubliés, découvrez nos guides et conseils.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; {{ now.Year }} Mamie-Thé. Tous droits réservés.</p>
+  </div>
+</footer>

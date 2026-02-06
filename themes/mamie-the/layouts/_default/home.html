@@ -1,0 +1,80 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-decorations">
+    <span class="deco deco-steam">&#9478;&#9478;&#9478;</span>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">Daily Dose of Tea</div>
+    <h1 class="hero-title">L'ART DE L'INFUSION,<br>LES SECRETS DE NOS<br>GRANDS-MÈRES</h1>
+    <p class="hero-subtitle">Plongez dans l'univers fascinant du thé. Des rituels du Matcha aux remèdes oubliés, découvrez nos guides, tests et conseils pour sublimer votre pause quotidienne.</p>
+    <a href="/blog/" class="btn btn-primary">Explorez le blog</a>
+  </div>
+</section>
+
+<section class="welcome-divider">
+  <div class="scallop-border"></div>
+  <div class="welcome-badge">WELCOME!</div>
+  <div class="checkerboard"></div>
+</section>
+
+<section class="intro-section">
+  <div class="intro-inner">
+    <span class="intro-label">Brewly</span>
+    <h2 class="intro-title">BREWING STORIES,<br>NOT JUST CUPS</h2>
+    <p class="intro-text">Chaque tasse de thé raconte une histoire. Chez Mamie-Thé, nous explorons les traditions séculaires, les bienfaits cachés et les saveurs du monde entier.</p>
+  </div>
+</section>
+
+<section class="categories-section">
+  <div class="section-inner">
+    <h2 class="section-title">Nos Catégories</h2>
+    <div class="categories-grid">
+      <a href="/categories/thes-verts/" class="category-card">
+        <div class="category-icon">&#127811;</div>
+        <h3>Thés Verts</h3>
+        <p>Du Sencha au Matcha, explorez les thés verts et leurs bienfaits millénaires.</p>
+      </a>
+      <a href="/categories/thes-noirs/" class="category-card">
+        <div class="category-icon">&#9749;</div>
+        <h3>Thés Noirs</h3>
+        <p>Earl Grey, Assam, Darjeeling... Les grands classiques qui réchauffent l'âme.</p>
+      </a>
+      <a href="/categories/tisanes/" class="category-card">
+        <div class="category-icon">&#127807;</div>
+        <h3>Tisanes</h3>
+        <p>Camomille, verveine, tilleul... Les remèdes de grand-mère pour tous les maux.</p>
+      </a>
+      <a href="/categories/rituels-et-conseils/" class="category-card">
+        <div class="category-icon">&#128218;</div>
+        <h3>Rituels & Conseils</h3>
+        <p>Température, temps d'infusion, accessoires... Devenez un expert du thé.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="latest-posts">
+  <div class="section-inner">
+    <h2 class="section-title">Derniers Articles</h2>
+    <div class="posts-grid">
+      {{ range first 6 (where .Site.RegularPages "Section" "blog") }}
+      <article class="post-card">
+        <div class="post-card-body">
+          <div class="post-meta">
+            {{ with .Params.categories }}
+            <span class="post-category">{{ index . 0 }}</span>
+            {{ end }}
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+          </div>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p>{{ .Summary | truncate 120 }}</p>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    <div class="section-cta">
+      <a href="/blog/" class="btn btn-outline">Voir tous les articles</a>
+    </div>
+  </div>
+</section>
+{{ end }}
