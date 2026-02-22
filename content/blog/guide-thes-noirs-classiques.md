@@ -5,6 +5,8 @@ categories: ["Thés noirs"]
 tags: ["earl grey", "darjeeling", "assam", "guide"]
 author: "Mamie-Thé"
 description: "Tour d'horizon des grands thés noirs qui ont fait l'histoire, leurs origines et comment les préparer à la perfection."
+excerpt: "D'Earl Grey au Darjeeling en passant par l'Assam et le Lapsang Souchong, tour d'horizon des grands thés noirs et leurs préparations idéales."
+icon: "teacup"
 ---
 
 Les thés noirs sont les plus consommés au monde, et pour cause : leur richesse aromatique et leur caractère en font des compagnons parfaits du quotidien. Voici un guide des incontournables.

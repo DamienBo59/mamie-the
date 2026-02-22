@@ -5,6 +5,8 @@ categories: ["Thés verts"]
 tags: ["matcha", "antioxydants", "japon"]
 author: "Mamie-Thé"
 description: "Découvrez pourquoi le Matcha est considéré comme un super-aliment et comment l'intégrer dans votre quotidien."
+excerpt: "Super-aliment japonais, le Matcha se consomme en poudre pour absorber 100% des nutriments et profiter d'une énergie calme et durable."
+icon: "leaves"
 ---
 
 Le Matcha, cette poudre d'un vert éclatant originaire du Japon, est bien plus qu'une simple tendance. Utilisé depuis des siècles dans la cérémonie du thé japonaise, il recèle des trésors de bienfaits pour la santé.

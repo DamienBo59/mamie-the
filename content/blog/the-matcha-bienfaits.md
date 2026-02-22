@@ -7,6 +7,8 @@ category: "Thés verts"
 tags: ["matcha", "bienfaits", "antioxydants", "thé vert", "santé", "L-théanine", "EGCG", "japon", "énergie", "concentration"]
 categories: ["Thés verts"]
 draft: false
+excerpt: "Le matcha contient 137 fois plus d'antioxydants qu'un thé vert classique et offre une énergie stable grâce au duo caféine-L-théanine."
+icon: "matcha"
 ---
 
 > **En bref :**
@@ -34,7 +36,7 @@ Le **thé matcha** est un thé vert japonais réduit en poudre fine, issu de feu
 
 ### Un mode de consommation unique
 
-Contrairement aux thés verts classiques où l'on infuse les feuilles puis on les retire, le matcha se consomme **intégralement sous forme de poudre** dissoute dans l'eau. Il est donc impossible de comparer une tasse de matcha à une tasse de sencha du point de vue nutritionnel : en buvant du matcha, on ingère 100 % des composants de la feuille. Pour mieux comprendre les différences entre les thés verts japonais, il est utile de consulter notre comparatif [Sencha vs Gyokuro](/blog/sencha-vs-gyokuro/).
+Contrairement aux thés verts classiques où l'on infuse les feuilles puis on les retire, le matcha se consomme **intégralement sous forme de poudre** dissoute dans l'eau. Il est donc impossible de comparer une tasse de matcha à une tasse de sencha du point de vue nutritionnel : en buvant du matcha, on ingère 100 % des composants de la feuille. Pour mieux comprendre les différences entre les thés verts japonais, il est utile de consulter notre comparatif [Sencha vs Gyokuro]({{< relref "sencha-vs-gyokuro" >}}).
 
 ### Une histoire millénaire
 
@@ -97,7 +99,7 @@ Une tasse de matcha (2 g de poudre) contient environ **64 mg de caféine**, cont
 | Thé noir | 47 | Traces | 2-3 h | Modéré |
 | Boisson énergisante | 80-160 | Non | 1-4 h | Oui |
 
-Pour approfondir la question de la **préparation optimale** selon chaque type de thé, notre guide sur [la température parfaite d'infusion](/blog/temperature-infusion-parfaite/) détaille les paramètres essentiels.
+Pour approfondir la question de la **préparation optimale** selon chaque type de thé, notre guide sur [la température parfaite d'infusion]({{< relref "temperature-infusion-parfaite" >}}) détaille les paramètres essentiels.
 
 ## Comment choisir un matcha de qualité pour maximiser ses bienfaits
 
@@ -140,7 +142,7 @@ La plupart des études cliniques sur les **bienfaits du matcha** utilisent des d
 > « La consommation modérée et régulière de matcha, à raison de 1 à 3 tasses par jour, semble offrir le meilleur rapport bénéfice/risque selon les données actuelles. »
 > — International Journal of Food Sciences and Nutrition, 2021
 
-Il est pertinent de noter que la **température de l'eau** joue un rôle déterminant : une eau trop chaude libère davantage de tanins (amertume) et dégrade certains antioxydants thermosensibles. Notre guide sur [la température parfaite d'infusion](/blog/temperature-infusion-parfaite/) explique en détail comment maîtriser ce paramètre crucial.
+Il est pertinent de noter que la **température de l'eau** joue un rôle déterminant : une eau trop chaude libère davantage de tanins (amertume) et dégrade certains antioxydants thermosensibles. Notre guide sur [la température parfaite d'infusion]({{< relref "temperature-infusion-parfaite" >}}) explique en détail comment maîtriser ce paramètre crucial.
 
 ## Précautions et contre-indications
 
@@ -162,7 +164,7 @@ Les catéchines du matcha peuvent **inhiber l'absorption du fer non héminique**
 
 Le matcha étant consommé entier, la qualité de la matière première est fondamentale. Un matcha non biologique peut contenir des résidus de **pesticides** ou de **métaux lourds** (plomb notamment) absorbés par la plante. Privilégier un matcha certifié biologique et testé par un laboratoire indépendant reste une précaution pertinente.
 
-Pour découvrir d'autres alternatives saines comme les infusions de plantes, notre article sur les [tisanes de grand-mère pour passer l'hiver](/blog/tisanes-grand-mere-hiver/) offre des recettes complémentaires au matcha.
+Pour découvrir d'autres alternatives saines comme les infusions de plantes, notre article sur les [tisanes de grand-mère pour passer l'hiver]({{< relref "tisanes-grand-mere-hiver" >}}) offre des recettes complémentaires au matcha.
 
 ## Questions fréquentes
 
@@ -176,7 +178,7 @@ Il est généralement recommandé de consommer **1 à 3 tasses par jour** (2 g p
 
 ### Le matcha est-il meilleur que le thé vert en feuilles ?
 
-Du point de vue strictement nutritionnel, le matcha offre une **concentration supérieure en antioxydants et en L-théanine** puisqu'on consomme la feuille entière. Toutefois, les thés verts en feuilles comme le [sencha ou le gyokuro](/blog/sencha-vs-gyokuro/) offrent des profils aromatiques différents et complémentaires. Le choix dépend des préférences personnelles et des objectifs de consommation.
+Du point de vue strictement nutritionnel, le matcha offre une **concentration supérieure en antioxydants et en L-théanine** puisqu'on consomme la feuille entière. Toutefois, les thés verts en feuilles comme le [sencha ou le gyokuro]({{< relref "sencha-vs-gyokuro" >}}) offrent des profils aromatiques différents et complémentaires. Le choix dépend des préférences personnelles et des objectifs de consommation.
 
 ### Faut-il consommer le matcha chaud ou froid ?
 

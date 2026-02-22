@@ -5,6 +5,8 @@ categories: ["Tisanes"]
 tags: ["hiver", "remèdes", "camomille", "thym"]
 author: "Mamie-Thé"
 description: "Les recettes de tisanes transmises de génération en génération pour affronter le froid et les petits maux de l'hiver."
+excerpt: "Cinq recettes de tisanes intemporelles — thym-miel-citron, camomille, tilleul, verveine et gingembre — pour traverser l'hiver sereinement."
+icon: "herbal"
 ---
 
 Quand le froid s'installe et que les premiers rhumes pointent leur nez, rien ne vaut les recettes éprouvées de nos grands-mères. Voici cinq tisanes intemporelles pour traverser l'hiver sereinement.
