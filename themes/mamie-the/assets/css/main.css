@@ -469,6 +469,26 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--green-light);
 }
 
+.post-card:hover .post-card-icon {
+  background-color: var(--green-dark);
+  color: var(--cream);
+}
+
+.post-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--cream-dark);
+  color: var(--green-dark);
+  transition: all 0.3s ease;
+}
+
+.post-card-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
 .post-card-body {
   padding: 28px;
 }

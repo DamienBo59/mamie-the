@@ -5,6 +5,8 @@ categories: ["Rituels et Conseils"]
 tags: ["préparation", "température", "guide", "débutant"]
 author: "Mamie-Thé"
 description: "Pourquoi la température de l'eau est le facteur le plus important pour réussir votre thé, et comment la maîtriser."
+excerpt: "Guide des températures idéales pour chaque type de thé, de 60°C pour les verts japonais à 100°C pour les tisanes, avec des astuces sans thermomètre."
+icon: "thermometer"
 ---
 
 Vous pouvez avoir le meilleur thé du monde, si vous le préparez avec de l'eau à la mauvaise température, le résultat sera décevant. Voici le guide ultime pour ne plus jamais rater votre infusion.

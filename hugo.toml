@@ -3,6 +3,7 @@ languageCode = 'fr'
 defaultContentLanguage = 'fr'
 title = 'Mamie-Thé'
 theme = 'mamie-the'
+removePathAccents = true
 
 [params]
   description = "L'art de l'infusion, les secrets de nos grands-mères. Plongez dans l'univers fascinant du thé."

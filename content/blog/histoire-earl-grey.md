@@ -5,6 +5,8 @@ categories: ["Thés noirs"]
 tags: ["earl grey", "histoire", "bergamote", "angleterre"]
 author: "Mamie-Thé"
 description: "Retour sur les origines mystérieuses du thé le plus célèbre du monde et les légendes qui l'entourent."
+excerpt: "Des légendes d'un Premier ministre britannique à la bergamote de Calabre, l'histoire fascinante du thé aromatisé le plus célèbre au monde."
+icon: "history"
 ---
 
 L'Earl Grey est sans doute le thé aromatisé le plus connu au monde. Mais connaissez-vous vraiment son histoire ? Elle est plus mystérieuse qu'on ne le croit.

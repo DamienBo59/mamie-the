@@ -5,6 +5,8 @@ categories: ["Thés verts"]
 tags: ["sencha", "gyokuro", "japon", "comparatif"]
 author: "Mamie-Thé"
 description: "Comparatif détaillé entre les deux grands thés verts japonais : le Sencha du quotidien et le prestigieux Gyokuro."
+excerpt: "Sencha cultivé au soleil vs Gyokuro ombré 21 jours : deux thés verts japonais aux profils radicalement différents, du quotidien au prestige."
+icon: "compare"
 ---
 
 Le Japon produit certains des thés verts les plus raffinés au monde. Parmi eux, le Sencha et le Gyokuro sont les deux stars incontestées. Mais quelles sont leurs différences ?

@@ -10,6 +10,7 @@
     <div class="posts-grid">
       {{ range .Pages }}
       <article class="post-card">
+        {{ with .Params.icon }}{{ partial "card-icon.html" . }}{{ end }}
         <div class="post-card-body">
           <div class="post-meta">
             {{ with .Params.categories }}
@@ -18,7 +19,7 @@
             <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
           </div>
           <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-          <p>{{ .Summary | truncate 150 }}</p>
+          <p>{{ with .Params.excerpt }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}</p>
         </div>
       </article>
       {{ end }}
