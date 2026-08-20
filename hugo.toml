@@ -15,10 +15,27 @@ buildFuture = false
   author = "helene-vasseur"
   logoText = "Mamie-Thé"
   siteStarted = 2026
+  # Parametres SEO avances, lus par le partial seo-head.html
+  author_name = "Hélène Vasseur"
+  author_url = "https://www.mamie-the.fr/a-propos/"
+  author_job_title = "Amatrice de thé et rédactrice"
+  default_og_image = "/images/og-default.png"
+  logo = "/favicon.svg"
+  founding_year = "2026"
+  expertise = ["Thés verts", "Thés noirs", "Infusions et tisanes", "Matériel et théières", "Rituels de préparation"]
   # Aucun formulaire d'inscription n'est branché : pas de newsletter tant qu'il n'y a pas de service derrière.
 
 [author]
   name = "Hélène Vasseur"
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[services]
+  [services.rss]
+    limit = 30
 
 [markup]
   [markup.goldmark.renderer]

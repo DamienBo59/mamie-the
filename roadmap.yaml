@@ -1,0 +1,1096 @@
+# Roadmap editoriale evergreen de mamie-the.fr
+#
+# 102 entrees, 284901 recherches mensuelles cumulees, du 2026-08-25 au 2027-08-13.
+#
+# Alimente /create-article-auto (publication automatique) et /create-article-seo
+# (production en lot). Format documente dans .claude/templates/roadmap-template.yaml
+# du template du parc.
+#
+# ORIGINE DES MOTS-CLES
+# ---------------------
+# Ce ne sont pas des suggestions d'outil : ce sont des requetes sur lesquelles les
+# concurrents du the sont DEJA positionnes, relevees le 2026-08-20 via l'API
+# Haloscan sur 7 sites (palaisdesthes, thesdelapagode, thes-traditions,
+# jadore-le-the, le-the.fr, teaheritage, origeens), puis filtrees sur la pertinence
+# thematique, l'intention informationnelle et le volume, et dedupliquees.
+# Methode complete : Drive perso,
+#   100 Areas/seo_freelance/Site web/parc-pbn/pbn - fiche clusters et mots-cles 2026-08.md
+#
+# CE QUE DISENT CES DONNEES
+# -------------------------
+# Sur le the, le lecteur ne vient pas pour devenir connaisseur : bienfaits et
+# preparation pesent 43 % du volume, les tisanes 15 %, et la culture du the, le
+# sujet le plus tentant a ecrire, seulement 12,9 %. Ecrire ce que cherche le
+# lecteur, pas ce qui fait plaisir a l'auteur.
+#
+# ⚠️ YMYL SUR LA CATEGORIE "Bienfaits et sante"
+# ----------------------------------------------
+# Ces entrees touchent a la sante (`tisane de thym danger`, `tisane pour dormir`,
+# `thes pour maigrir`). Regle non negociable, deja dans la fiche persona d'Helene
+# Vasseur : temoignage d'usage et etat des connaissances, JAMAIS de promesse
+# therapeutique, JAMAIS de posologie, JAMAIS de posture de soignant. Chaque
+# article de cette categorie rappelle qu'une infusion ne remplace pas un avis
+# medical.
+#
+# ⚠️ LE `kw` EST UNE REQUETE, PAS UN TITRE
+# -----------------------------------------
+# Certains mots-cles portent les fautes et la syntaxe des internautes
+# (`the ala menthe`, `matcha latte tea`, `sauge pour tisane`). C'est normal, c'est
+# ce qui est reellement tape. **Ne jamais reprendre la faute dans le titre ni dans
+# le texte** : viser l'intention, ecrire un titre correct en francais.
+#
+# CADENCE ET DIVERSITE
+# --------------------
+# 2 articles par semaine, mardi et vendredi. La regle de diversite des categories
+# est respectee et verifiee par script : aucune paire consecutive de meme
+# categorie, et au moins 3 categories distinctes sur toute fenetre de 5 articles.
+# En cas d'ajout manuel, reverifier.
+#
+# CHAMP kd
+# --------
+# Laisse a null volontairement. Haloscan ne fournit pas de Keyword Difficulty : son
+# champ `competition` est publicitaire et non organique, l'utiliser comme KD serait
+# faux. A remplir si un acces Semrush redevient disponible.
+#
+# CANNIBALISATION : 8 MOTS-CLES ECARTES
+# ---------------------------------------
+# Ils recoupaient un des 7 articles deja publies :
+#   - the matcha (24600/mois) recoupe « Les bienfaits insoupçonnés du thé vert Matcha »
+#   - matcha bienfaits (14700/mois) recoupe « Les bienfaits insoupçonnés du thé vert Matcha »
+#   - the vert (8800/mois) recoupe « Les bienfaits insoupçonnés du thé vert Matcha »
+#   - thé matcha bienfaits (4714/mois) recoupe « Les bienfaits insoupçonnés du thé vert Matcha »
+#   - thé vert matcha (3682/mois) recoupe « Les bienfaits insoupçonnés du thé vert Matcha »
+#   - thé vert sencha (3600/mois) recoupe « Sencha vs Gyokuro : quel thé vert japonais choisir ? »
+#   - the earl grey (2636/mois) recoupe « Guide des thés noirs classiques : de l'Earl Grey au Darjeeling »
+#   - the japonais vert (1714/mois) recoupe « Sencha vs Gyokuro : quel thé vert japonais choisir ? »
+#
+# A noter : `the vert` (8 800/mois) et `the matcha` (24 600/mois) sont les deux
+# tetes de gondole de la thematique, et elles sont bloquees par deux articles
+# courts de 2026-02. **Le bon reflexe n'est pas de les ajouter ici, c'est de
+# reecrire ces deux articles en pages piliers.** Tant que ce n'est pas fait, ces
+# volumes sont hors d'atteinte.
+#
+# Si un article existant est reecrit ou depublie, le mot-cle correspondant peut
+# revenir dans cette roadmap.
+
+articles:
+  - kw: "bouilloire à température réglable"
+    category: "Préparation et matériel"
+    volume: 14800
+    kd: null
+    scheduled_date: "2026-08-25"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "tisane au feuille de framboisier"
+    category: "Tisanes et plantes"
+    volume: 4714
+    kd: null
+    scheduled_date: "2026-08-28"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "matcha latte tea"
+    category: "Culture et rituels"
+    volume: 15083
+    kd: null
+    scheduled_date: "2026-09-01"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "bienfaits verveine"
+    category: "Bienfaits et santé"
+    volume: 6750
+    kd: null
+    scheduled_date: "2026-09-04"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "matcha vanille"
+    category: "Variétés de thé"
+    volume: 10900
+    kd: null
+    scheduled_date: "2026-09-08"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "tasses a the"
+    category: "Préparation et matériel"
+    volume: 7364
+    kd: null
+    scheduled_date: "2026-09-11"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "the ala menthe"
+    category: "Tisanes et plantes"
+    volume: 4500
+    kd: null
+    scheduled_date: "2026-09-15"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "the marocain"
+    category: "Culture et rituels"
+    volume: 4909
+    kd: null
+    scheduled_date: "2026-09-18"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "bienfaits camomille"
+    category: "Bienfaits et santé"
+    volume: 6000
+    kd: null
+    scheduled_date: "2026-09-22"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "kit matcha"
+    category: "Variétés de thé"
+    volume: 9600
+    kd: null
+    scheduled_date: "2026-09-25"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "boite a the"
+    category: "Préparation et matériel"
+    volume: 6750
+    kd: null
+    scheduled_date: "2026-09-29"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "yerba mate"
+    category: "Tisanes et plantes"
+    volume: 4500
+    kd: null
+    scheduled_date: "2026-10-02"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "the glace"
+    category: "Culture et rituels"
+    volume: 4500
+    kd: null
+    scheduled_date: "2026-10-06"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "bienfaits du rooibos"
+    category: "Bienfaits et santé"
+    volume: 5500
+    kd: null
+    scheduled_date: "2026-10-09"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "the blanc"
+    category: "Variétés de thé"
+    volume: 8250
+    kd: null
+    scheduled_date: "2026-10-13"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "infuseur à thé"
+    category: "Préparation et matériel"
+    volume: 4909
+    kd: null
+    scheduled_date: "2026-10-16"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "infusion thym"
+    category: "Tisanes et plantes"
+    volume: 4400
+    kd: null
+    scheduled_date: "2026-10-20"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "matcha latte recette"
+    category: "Culture et rituels"
+    volume: 3273
+    kd: null
+    scheduled_date: "2026-10-23"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "bienfaits the noir"
+    category: "Bienfaits et santé"
+    volume: 5500
+    kd: null
+    scheduled_date: "2026-10-27"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "fouet matcha"
+    category: "Variétés de thé"
+    volume: 6000
+    kd: null
+    scheduled_date: "2026-10-30"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "theiere verre"
+    category: "Préparation et matériel"
+    volume: 4714
+    kd: null
+    scheduled_date: "2026-11-03"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "le maté"
+    category: "Tisanes et plantes"
+    volume: 4000
+    kd: null
+    scheduled_date: "2026-11-06"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "thé glacé maison"
+    category: "Culture et rituels"
+    volume: 2000
+    kd: null
+    scheduled_date: "2026-11-10"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "tisane de thym danger"
+    category: "Bienfaits et santé"
+    volume: 4800
+    kd: null
+    scheduled_date: "2026-11-13"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "the de marque"
+    category: "Variétés de thé"
+    volume: 2571
+    kd: null
+    scheduled_date: "2026-11-17"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "theiere en fonte"
+    category: "Préparation et matériel"
+    volume: 4000
+    kd: null
+    scheduled_date: "2026-11-20"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "maté calebasse"
+    category: "Tisanes et plantes"
+    volume: 3600
+    kd: null
+    scheduled_date: "2026-11-24"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "matcha ceremonie"
+    category: "Culture et rituels"
+    volume: 1900
+    kd: null
+    scheduled_date: "2026-11-27"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "the minceur"
+    category: "Bienfaits et santé"
+    volume: 3000
+    kd: null
+    scheduled_date: "2026-12-01"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "l'autre the"
+    category: "Variétés de thé"
+    volume: 2071
+    kd: null
+    scheduled_date: "2026-12-04"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "cuillere a the"
+    category: "Préparation et matériel"
+    volume: 3385
+    kd: null
+    scheduled_date: "2026-12-08"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "tisane camomille"
+    category: "Tisanes et plantes"
+    volume: 3200
+    kd: null
+    scheduled_date: "2026-12-11"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "chai the latte"
+    category: "Culture et rituels"
+    volume: 1807
+    kd: null
+    scheduled_date: "2026-12-15"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "tisane de romarin danger"
+    category: "Bienfaits et santé"
+    volume: 2900
+    kd: null
+    scheduled_date: "2026-12-18"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "box à thé"
+    category: "Variétés de thé"
+    volume: 2000
+    kd: null
+    scheduled_date: "2026-12-22"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "boule à thé"
+    category: "Préparation et matériel"
+    volume: 3273
+    kd: null
+    scheduled_date: "2026-12-25"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "maté boisson"
+    category: "Tisanes et plantes"
+    volume: 2600
+    kd: null
+    scheduled_date: "2026-12-29"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "the chai"
+    category: "Culture et rituels"
+    volume: 1714
+    kd: null
+    scheduled_date: "2027-01-01"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "tisane camomille bienfaits"
+    category: "Bienfaits et santé"
+    volume: 2700
+    kd: null
+    scheduled_date: "2027-01-05"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "mugs à thé"
+    category: "Variétés de thé"
+    volume: 1900
+    kd: null
+    scheduled_date: "2027-01-08"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "theiere japonais"
+    category: "Préparation et matériel"
+    volume: 2636
+    kd: null
+    scheduled_date: "2027-01-12"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "tisane de sauge"
+    category: "Tisanes et plantes"
+    volume: 1900
+    kd: null
+    scheduled_date: "2027-01-15"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "thé anglais"
+    category: "Culture et rituels"
+    volume: 1700
+    kd: null
+    scheduled_date: "2027-01-19"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "tisane pour dormir"
+    category: "Bienfaits et santé"
+    volume: 2636
+    kd: null
+    scheduled_date: "2027-01-22"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "services à thé"
+    category: "Variétés de thé"
+    volume: 1900
+    kd: null
+    scheduled_date: "2027-01-26"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "bouilloire électrique réglage température"
+    category: "Préparation et matériel"
+    volume: 1900
+    kd: null
+    scheduled_date: "2027-01-29"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "tisane de framboisier"
+    category: "Tisanes et plantes"
+    volume: 1800
+    kd: null
+    scheduled_date: "2027-02-02"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "thés chinois"
+    category: "Culture et rituels"
+    volume: 1300
+    kd: null
+    scheduled_date: "2027-02-05"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "the detox"
+    category: "Bienfaits et santé"
+    volume: 2636
+    kd: null
+    scheduled_date: "2027-02-09"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "the vert bio"
+    category: "Variétés de thé"
+    volume: 1727
+    kd: null
+    scheduled_date: "2027-02-12"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "sachet de thé"
+    category: "Préparation et matériel"
+    volume: 1900
+    kd: null
+    scheduled_date: "2027-02-16"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "the a la menthe"
+    category: "Tisanes et plantes"
+    volume: 1800
+    kd: null
+    scheduled_date: "2027-02-19"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "service thé japonais"
+    category: "Culture et rituels"
+    volume: 880
+    kd: null
+    scheduled_date: "2027-02-23"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "maté bienfaits"
+    category: "Bienfaits et santé"
+    volume: 2636
+    kd: null
+    scheduled_date: "2027-02-26"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "bol à matcha"
+    category: "Variétés de thé"
+    volume: 1700
+    kd: null
+    scheduled_date: "2027-03-02"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "bouilloire electrique temperature reglable"
+    category: "Préparation et matériel"
+    volume: 1727
+    kd: null
+    scheduled_date: "2027-03-05"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "tisane au pissenlit"
+    category: "Tisanes et plantes"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-03-09"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "service a thé marocain"
+    category: "Culture et rituels"
+    volume: 880
+    kd: null
+    scheduled_date: "2027-03-12"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "tisane romarin bienfaits"
+    category: "Bienfaits et santé"
+    volume: 2250
+    kd: null
+    scheduled_date: "2027-03-16"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "bio thé france"
+    category: "Variétés de thé"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-03-19"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "théière maison du monde"
+    category: "Préparation et matériel"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-03-23"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "thé menthe maroc"
+    category: "Tisanes et plantes"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-03-26"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "cérémonie du thé"
+    category: "Culture et rituels"
+    volume: 600
+    kd: null
+    scheduled_date: "2027-03-30"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "infusion thym : bienfaits"
+    category: "Bienfaits et santé"
+    volume: 1727
+    kd: null
+    scheduled_date: "2027-04-02"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "infusion de clou de girofle"
+    category: "Variétés de thé"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-04-06"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "filtre thé"
+    category: "Préparation et matériel"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-04-09"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "menthe poivrée infusion"
+    category: "Tisanes et plantes"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-04-13"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "thé et tradition"
+    category: "Culture et rituels"
+    volume: 480
+    kd: null
+    scheduled_date: "2027-04-16"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "the hojicha bienfait"
+    category: "Bienfaits et santé"
+    volume: 1700
+    kd: null
+    scheduled_date: "2027-04-20"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "the noir ou vert"
+    category: "Variétés de thé"
+    volume: 1500
+    kd: null
+    scheduled_date: "2027-04-23"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "theiere en porcelaine"
+    category: "Préparation et matériel"
+    volume: 1583
+    kd: null
+    scheduled_date: "2027-04-27"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "thé gingembre citron"
+    category: "Tisanes et plantes"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-04-30"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "service à thé en porcelaine"
+    category: "Culture et rituels"
+    volume: 480
+    kd: null
+    scheduled_date: "2027-05-04"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "les 10 bienfaits de la camomille"
+    category: "Bienfaits et santé"
+    volume: 1700
+    kd: null
+    scheduled_date: "2027-05-07"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "the au citron"
+    category: "Variétés de thé"
+    volume: 1500
+    kd: null
+    scheduled_date: "2027-05-11"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "meilleure bouilloire à température réglable"
+    category: "Préparation et matériel"
+    volume: 1300
+    kd: null
+    scheduled_date: "2027-05-14"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "bombilla del mate"
+    category: "Tisanes et plantes"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-05-18"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "carafe pour the glace"
+    category: "Culture et rituels"
+    volume: 390
+    kd: null
+    scheduled_date: "2027-05-21"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "bienfaits tisane hibiscus"
+    category: "Bienfaits et santé"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-05-25"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "thé pu erh"
+    category: "Variétés de thé"
+    volume: 1400
+    kd: null
+    scheduled_date: "2027-05-28"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "théière fonte japonaise"
+    category: "Préparation et matériel"
+    volume: 1300
+    kd: null
+    scheduled_date: "2027-06-01"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "sauge en infusion"
+    category: "Tisanes et plantes"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-06-04"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "thé vert chinois"
+    category: "Culture et rituels"
+    volume: 390
+    kd: null
+    scheduled_date: "2027-06-08"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "bienfait tisane thym"
+    category: "Bienfaits et santé"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-06-11"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "achat thé matcha"
+    category: "Variétés de thé"
+    volume: 1300
+    kd: null
+    scheduled_date: "2027-06-15"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "maté tasse"
+    category: "Préparation et matériel"
+    volume: 1300
+    kd: null
+    scheduled_date: "2027-06-18"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "tisane menthe poivrée"
+    category: "Tisanes et plantes"
+    volume: 1500
+    kd: null
+    scheduled_date: "2027-06-22"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "cérémonie du thé japon"
+    category: "Culture et rituels"
+    volume: 320
+    kd: null
+    scheduled_date: "2027-06-25"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "romarin infusion bienfaits"
+    category: "Bienfaits et santé"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-06-29"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "bouilloire the"
+    category: "Préparation et matériel"
+    volume: 1231
+    kd: null
+    scheduled_date: "2027-07-02"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "mate in tea"
+    category: "Tisanes et plantes"
+    volume: 1462
+    kd: null
+    scheduled_date: "2027-07-06"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "service thé maroc"
+    category: "Culture et rituels"
+    volume: 320
+    kd: null
+    scheduled_date: "2027-07-09"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "bouilloire réglage température"
+    category: "Préparation et matériel"
+    volume: 1138
+    kd: null
+    scheduled_date: "2027-07-13"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "fenouil tisane bienfait"
+    category: "Bienfaits et santé"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-07-16"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "bombilla y mate"
+    category: "Tisanes et plantes"
+    volume: 1300
+    kd: null
+    scheduled_date: "2027-07-20"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "thé et tradition ahuy"
+    category: "Culture et rituels"
+    volume: 260
+    kd: null
+    scheduled_date: "2027-07-23"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "boite a the bois"
+    category: "Préparation et matériel"
+    volume: 1000
+    kd: null
+    scheduled_date: "2027-07-27"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "tisane au romarin frais"
+    category: "Tisanes et plantes"
+    volume: 1182
+    kd: null
+    scheduled_date: "2027-07-30"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "the vert pour maigrir"
+    category: "Bienfaits et santé"
+    volume: 1583
+    kd: null
+    scheduled_date: "2027-08-03"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "service à the marocain maison du monde"
+    category: "Culture et rituels"
+    volume: 210
+    kd: null
+    scheduled_date: "2027-08-06"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "une théière"
+    category: "Préparation et matériel"
+    volume: 1000
+    kd: null
+    scheduled_date: "2027-08-10"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "thé vert menthe"
+    category: "Tisanes et plantes"
+    volume: 1100
+    kd: null
+    scheduled_date: "2027-08-13"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null

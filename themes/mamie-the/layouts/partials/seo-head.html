@@ -3,7 +3,7 @@
 {{- $aid := .Params.author | default $site.Params.author -}}
 {{- $a := index $authors $aid -}}
 {{- $desc := .Description | default $site.Params.description -}}
-{{- $img := "" -}}{{- with .Params.image }}{{ $img = . | absURL }}{{ end -}}
+{{- $img := $site.Params.default_og_image | absURL -}}{{- with .Params.image }}{{ $img = . | absURL }}{{ end -}}
 {{- $base := $site.BaseURL -}}
 {{- $pid := printf "%s#/schema/person/%s" $base $aid -}}
 
@@ -17,7 +17,10 @@
 <meta property="og:title" content="{{ if .IsHome }}{{ $site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ .Permalink }}">
-{{ with $img }}<meta property="og:image" content="{{ . }}">{{ end }}
+{{ with $img }}<meta property="og:image" content="{{ . }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ $site.Title }}, {{ $site.Params.tagline }}">{{ end }}
 <meta name="twitter:card" content="{{ if $img }}summary_large_image{{ else }}summary{{ end }}">
 <meta name="twitter:title" content="{{ if .IsHome }}{{ $site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta name="twitter:description" content="{{ $desc }}">
