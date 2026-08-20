@@ -1,14 +1,20 @@
 ---
 title: "Thé matcha bienfaits : pourquoi cette poudre verte est un allié santé incontournable"
+date: 2026-02-06
+lastmod: 2026-08-20
 description: "Découvrez tous les bienfaits du thé matcha : antioxydants, énergie, concentration. Guide complet pour profiter de ses vertus."
-date: "2026-02-06"
-author: "Mamie-Thé"
-category: "Thés verts"
-tags: ["matcha", "bienfaits", "antioxydants", "thé vert", "santé", "L-théanine", "EGCG", "japon", "énergie", "concentration"]
-categories: ["Thés verts"]
-draft: false
 excerpt: "Le matcha contient 137 fois plus d'antioxydants qu'un thé vert classique et offre une énergie stable grâce au duo caféine-L-théanine."
-icon: "matcha"
+author: helene-vasseur
+categories: ["Bienfaits et santé"]
+tags: ["matcha", "bienfaits", "thé vert", "préparation"]
+icon: "sun"
+faq:
+  - q: "Quelle température pour préparer un matcha ?"
+    a: "Entre 70 et 80 °C. L'eau bouillante donne un matcha amer et détruit une partie de sa finesse. C'est le même principe que pour un thé vert japonais infusé."
+  - q: "Matcha culinaire ou matcha de cérémonie ?"
+    a: "Le culinaire est plus astringent et prévu pour être noyé dans une préparation, gâteau ou latte. Pour le boire nature, il faut un grade cérémonie, sinon l'amertume domine."
+  - q: "Le matcha contient-il plus de caféine qu'un café ?"
+    a: "Non, un bol de matcha reste en dessous d'un espresso. Mais son effet est perçu comme plus long et plus régulier, parce que la L-théanine qu'il contient module l'absorption de la caféine."
 ---
 
 > **En bref :**

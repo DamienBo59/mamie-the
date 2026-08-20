@@ -1,31 +1,74 @@
 {{ define "main" }}
-<article class="single-post">
-  <header class="post-header">
-    <div class="post-meta">
-      {{ with .Params.categories }}
-      <span class="post-category">{{ index . 0 }}</span>
-      {{ end }}
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
-      {{ with .Params.author }}<span class="post-author">par {{ . }}</span>{{ end }}
+{{ $aid := .Params.author | default .Site.Params.author }}
+{{ $a := index hugo.Data.authors $aid }}
+
+<div class="article-head">
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="{{ "/" | relURL }}">Accueil</a> &rsaquo;
+      {{ if eq .Section "blog" }}<a href="{{ "blog/" | relURL }}">Articles</a> &rsaquo; {{ end }}
+      <span>{{ .Title }}</span>
+    </nav>
+    {{ with .Params.categories }}<span class="eyebrow">{{ index . 0 }}</span>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="article-lead">{{ . }}</p>{{ end }}
+    <div class="byline">
+      <span class="av">{{ with $a }}{{ substr .name 0 1 }}{{ end }}</span>
+      <span>
+        Par <a href="{{ "a-propos/" | relURL }}">{{ with $a }}{{ .name }}{{ end }}</a><br>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">Publié le {{ .Date.Format "2 January 2006" }}</time>
+        {{ if and .Lastmod (gt (.Lastmod.Sub .Date).Hours 24) }} &middot; mis à jour le {{ .Lastmod.Format "2 January 2006" }}{{ end }}
+        &middot; {{ .ReadingTime }} min de lecture
+      </span>
     </div>
-    <h1 class="post-title">{{ .Title }}</h1>
-    {{ with .Params.subtitle }}<p class="post-subtitle">{{ . }}</p>{{ end }}
-  </header>
-  <div class="post-content">
-    {{ .Content }}
   </div>
-  <footer class="post-footer">
-    {{ with .Params.tags }}
-    <div class="post-tags">
+</div>
+
+<div class="article-layout">
+  <article>
+    <div class="prose">{{ .Content }}</div>
+
+    {{ with .Params.faq }}
+    <section class="faq">
+      <h2>Questions fréquentes</h2>
       {{ range . }}
-      <a href="{{ printf "tags/%s/" (. | urlize) | relURL }}" class="tag">{{ . }}</a>
+      <details><summary>{{ .q }}</summary><div class="answer">{{ .a }}</div></details>
       {{ end }}
+    </section>
+    {{ end }}
+
+    {{ with .Params.tags }}
+    <div class="expertise" style="margin-top:2.5rem">
+      {{ range . }}<a href="{{ (printf "/tags/%s/" (. | urlize)) | relURL }}" class="chip">{{ . }}</a>{{ end }}
     </div>
     {{ end }}
-    <nav class="post-nav">
-      {{ with .PrevInSection }}<a href="{{ .RelPermalink }}" class="post-nav-link prev">&larr; {{ .Title }}</a>{{ end }}
-      {{ with .NextInSection }}<a href="{{ .RelPermalink }}" class="post-nav-link next">{{ .Title }} &rarr;</a>{{ end }}
-    </nav>
-  </footer>
-</article>
+
+    {{ partial "author-box.html" . }}
+
+    {{ $rel := .Site.RegularPages.Related . | first 3 }}
+    {{ with $rel }}
+    <section class="section" style="padding:3rem 0 0">
+      <div class="section-head"><span class="eyebrow">Dans la même veine</span><h2 style="font-size:1.4rem">À lire ensuite</h2></div>
+      <div class="grid grid-3">{{ range . }}{{ partial "card-article.html" . }}{{ end }}</div>
+    </section>
+    {{ end }}
+  </article>
+
+  <aside class="toc">
+    {{ with .TableOfContents }}
+      {{ if gt (len .) 60 }}
+      <div class="toc-title">Sur cette page</div>
+      {{ . }}
+      {{ end }}
+    {{ end }}
+    <div style="margin-top:2rem">
+      <div class="toc-title">Les outils</div>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="margin-bottom:.6rem"><a href="{{ "trouver-mon-the/" | relURL }}">Trouver mon thé</a></li>
+        <li style="margin-bottom:.6rem"><a href="{{ "guide-infusion/" | relURL }}">Guide d'infusion</a></li>
+        <li><a href="{{ "glossaire/" | relURL }}">Glossaire du thé</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
 {{ end }}

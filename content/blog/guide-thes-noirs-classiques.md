@@ -1,12 +1,20 @@
 ---
 title: "Guide des thés noirs classiques : de l'Earl Grey au Darjeeling"
 date: 2026-01-28
-categories: ["Thés noirs"]
-tags: ["earl grey", "darjeeling", "assam", "guide"]
-author: "Mamie-Thé"
+lastmod: 2026-08-20
 description: "Tour d'horizon des grands thés noirs qui ont fait l'histoire, leurs origines et comment les préparer à la perfection."
 excerpt: "D'Earl Grey au Darjeeling en passant par l'Assam et le Lapsang Souchong, tour d'horizon des grands thés noirs et leurs préparations idéales."
-icon: "teacup"
+author: helene-vasseur
+categories: ["Variétés de thé"]
+tags: ["thé noir", "assam", "darjeeling", "ceylan"]
+icon: "flame"
+faq:
+  - q: "Quel thé noir pour débuter ?"
+    a: "Un Ceylan ou un mélange breakfast : francs, tolérants sur la préparation, et bons avec ou sans lait. Le Darjeeling, souvent présenté comme le plus prestigieux, est en réalité le plus difficile à réussir."
+  - q: "Pourquoi préparer un Darjeeling comme un oolong ?"
+    a: "Parce qu'un Darjeeling de printemps est très peu oxydé, bien plus proche d'un oolong que d'un Assam. À 95 °C il devient astringent ; à 90 °C et trois minutes, il s'ouvre."
+  - q: "Peut-on mettre du lait dans tous les thés noirs ?"
+    a: "Non. Le lait fonctionne sur les thés charpentés comme l'Assam ou un breakfast, il écrase complètement un Darjeeling ou un thé noir de Chine délicat."
 ---
 
 Les thés noirs sont les plus consommés au monde, et pour cause : leur richesse aromatique et leur caractère en font des compagnons parfaits du quotidien. Voici un guide des incontournables.

@@ -1,0 +1,18 @@
+# Auteur unique du blog. C'est le persona P01 du parc.
+# Source de verite : 100 Areas/seo_freelance/Reddit/parc-reddit/personas/the/persona-P01-bibliothecaire-the.md
+helene-vasseur:
+  id: helene-vasseur
+  name: Hélène Vasseur
+  persona: P01
+  jobTitle:
+    fr: Amatrice de thé et rédactrice
+    en: Tea enthusiast and writer
+  bio:
+    fr: "Hélène Vasseur boit du thé en vrac depuis une quinzaine d'années, après avoir hérité de la collection de théières de sa grand-mère. Elle tient un carnet de dégustation et s'intéresse surtout à ce qui distingue un thé correct d'un très bon thé, à prix égal."
+    en: "Hélène Vasseur has been drinking loose-leaf tea for some fifteen years, after inheriting her grandmother's teapot collection. She keeps a tasting notebook and is mainly interested in what separates a decent tea from a very good one at the same price."
+  expertise:
+    - Thés verts
+    - Thés noirs
+    - Infusions et tisanes
+    - Matériel et théières
+    - Rituels de préparation

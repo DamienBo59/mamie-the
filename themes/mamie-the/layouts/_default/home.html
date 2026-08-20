@@ -1,81 +1,114 @@
 {{ define "main" }}
+{{ $blog := where .Site.RegularPages "Section" "blog" }}
+
 <section class="hero">
-  <div class="hero-decorations">
-    <span class="deco deco-steam">&#9478;&#9478;&#9478;</span>
-  </div>
-  <div class="hero-content">
-    <div class="hero-badge">Daily Dose of Tea</div>
-    <h1 class="hero-title">L'ART DE L'INFUSION,<br>LES SECRETS DE NOS<br>GRANDS-MÈRES</h1>
-    <p class="hero-subtitle">Plongez dans l'univers fascinant du thé. Des rituels du Matcha aux remèdes oubliés, découvrez nos guides, tests et conseils pour sublimer votre pause quotidienne.</p>
-    <a href="{{ "blog/" | relURL }}" class="btn btn-primary">Explorez le blog</a>
+  <div class="hero-in">
+    <div>
+      <span class="eyebrow">Le média du thé en vrac</span>
+      <h1>Le thé n'est pas compliqué.<br>Il est juste <em>mal préparé</em>.</h1>
+      <p class="hero-lead">Ici, on explique pourquoi votre thé est amer, quelle plante fait vraiment quoi, et comment reconnaître un bon vrac d'un mauvais. Sans jargon, et sans rien vendre.</p>
+      <div class="hero-actions">
+        <a href="{{ "trouver-mon-the/" | relURL }}" class="btn btn-primary">{{ partial "icon.html" (dict "n" "compass" "s" 18) }} Trouver mon thé</a>
+        <a href="{{ "guide-infusion/" | relURL }}" class="btn btn-ghost">{{ partial "icon.html" (dict "n" "thermo" "s" 18) }} Le guide d'infusion</a>
+      </div>
+      <div class="hero-facts">
+        <div class="fact"><strong>{{ len $blog }}</strong><span>articles</span></div>
+        <div class="fact"><strong>{{ len hugo.Data.infusion.familles }}</strong><span>familles de thé</span></div>
+        <div class="fact"><strong>{{ len hugo.Data.glossaire.termes }}</strong><span>termes expliqués</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration d'une théière fumante">
+        <ellipse cx="150" cy="268" rx="96" ry="11" fill="#274430" opacity=".1"/>
+        <path d="M60 150c0-42 40-64 90-64s90 22 90 64c0 46-40 84-90 84s-90-38-90-84Z" fill="#FAF6EE" stroke="#274430" stroke-width="5"/>
+        <path d="M240 158c22 2 34 14 34 28s-13 26-34 27" fill="none" stroke="#274430" stroke-width="5" stroke-linecap="round"/>
+        <path d="M60 168c-16 4-24 14-24 24" fill="none" stroke="#274430" stroke-width="5" stroke-linecap="round"/>
+        <path d="M118 86c4-14 16-22 32-22s28 8 32 22" fill="none" stroke="#274430" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="150" cy="60" r="9" fill="#C89B3C" stroke="#274430" stroke-width="4"/>
+        <path d="M96 196c26 16 82 16 108 0" fill="none" stroke="#C89B3C" stroke-width="5" stroke-linecap="round"/>
+        <path d="M112 42c0-14 8-24 8-34 6 8 12 14 12 24s-8 16-8 26" fill="none" stroke="#8FA891" stroke-width="4" stroke-linecap="round" opacity=".85"/>
+        <path d="M176 40c0-13 8-22 8-31 6 7 11 13 11 22s-7 15-7 24" fill="none" stroke="#8FA891" stroke-width="4" stroke-linecap="round" opacity=".6"/>
+      </svg>
+    </div>
   </div>
 </section>
 
-<section class="welcome-divider">
-  <div class="scallop-border"></div>
-  <div class="welcome-badge">WELCOME!</div>
-  <div class="checkerboard"></div>
-</section>
-
-<section class="intro-section">
-  <div class="intro-inner">
-    <span class="intro-label">Brewly</span>
-    <h2 class="intro-title">BREWING STORIES,<br>NOT JUST CUPS</h2>
-    <p class="intro-text">Chaque tasse de thé raconte une histoire. Chez Mamie-Thé, nous explorons les traditions séculaires, les bienfaits cachés et les saveurs du monde entier.</p>
-  </div>
-</section>
-
-<section class="categories-section">
-  <div class="section-inner">
-    <h2 class="section-title">Nos Catégories</h2>
-    <div class="categories-grid">
-      <a href="{{ "categories/thes-verts/" | relURL }}" class="category-card">
-        <div class="category-icon">&#127811;</div>
-        <h3>Thés Verts</h3>
-        <p>Du Sencha au Matcha, explorez les thés verts et leurs bienfaits millénaires.</p>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Par où commencer</span>
+      <h2>Trois outils, pas un de plus</h2>
+      <p>Le reste du site, ce sont des articles. Ces trois pages, elles, servent à s'en sortir tout de suite.</p>
+    </div>
+    <div class="tools">
+      <a href="{{ "trouver-mon-the/" | relURL }}" class="tool">
+        <span class="ico">{{ partial "icon.html" (dict "n" "compass" "s" 22) }}</span>
+        <span><h3>Trouver mon thé</h3><p>Six questions, une minute, et un type de thé qui vous correspond avec sa fiche d'infusion.</p></span>
       </a>
-      <a href="{{ "categories/thes-noirs/" | relURL }}" class="category-card">
-        <div class="category-icon">&#9749;</div>
-        <h3>Thés Noirs</h3>
-        <p>Earl Grey, Assam, Darjeeling... Les grands classiques qui réchauffent l'âme.</p>
+      <a href="{{ "guide-infusion/" | relURL }}" class="tool">
+        <span class="ico">{{ partial "icon.html" (dict "n" "thermo" "s" 22) }}</span>
+        <span><h3>Le guide d'infusion</h3><p>Température, durée, dosage et réinfusions pour {{ len hugo.Data.infusion.familles }} familles. La page à garder ouverte.</p></span>
       </a>
-      <a href="{{ "categories/tisanes/" | relURL }}" class="category-card">
-        <div class="category-icon">&#127807;</div>
-        <h3>Tisanes</h3>
-        <p>Camomille, verveine, tilleul... Les remèdes de grand-mère pour tous les maux.</p>
-      </a>
-      <a href="{{ "categories/rituels-et-conseils/" | relURL }}" class="category-card">
-        <div class="category-icon">&#128218;</div>
-        <h3>Rituels & Conseils</h3>
-        <p>Température, temps d'infusion, accessoires... Devenez un expert du thé.</p>
+      <a href="{{ "glossaire/" | relURL }}" class="tool">
+        <span class="ico">{{ partial "icon.html" (dict "n" "book" "s" 22) }}</span>
+        <span><h3>Le glossaire</h3><p>{{ len hugo.Data.glossaire.termes }} mots du thé expliqués simplement, de l'astringence au gyokuro.</p></span>
       </a>
     </div>
   </div>
 </section>
 
-<section class="latest-posts">
-  <div class="section-inner">
-    <h2 class="section-title">Derniers Articles</h2>
-    <div class="posts-grid">
-      {{ range first 6 (where .Site.RegularPages "Section" "blog") }}
-      <article class="post-card">
-        {{ with .Params.icon }}{{ partial "card-icon.html" . }}{{ end }}
-        <div class="post-card-body">
-          <div class="post-meta">
-            {{ with .Params.categories }}
-            <span class="post-category">{{ index . 0 }}</span>
-            {{ end }}
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
-          </div>
-          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-          <p>{{ with .Params.excerpt }}{{ . }}{{ else }}{{ .Summary | truncate 120 }}{{ end }}</p>
+{{ with $blog }}
+{{ $featured := index (sort . "Date" "desc") 0 }}
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">À la une</span><h2>Le dernier article</h2></div>
+    <article class="card" style="max-width:none">
+      <div class="card-body" style="padding:2rem">
+        <div class="meta">
+          {{ with $featured.Params.categories }}<a href="{{ (printf "/categories/%s/" (index . 0 | urlize)) | relURL }}" class="chip">{{ index . 0 }}</a>{{ end }}
+          <time datetime="{{ $featured.Date.Format "2006-01-02" }}">{{ $featured.Date.Format "2 January 2006" }}</time>
+          <span>{{ $featured.ReadingTime }} min de lecture</span>
         </div>
-      </article>
+        <h3 style="font-size:1.6rem;max-width:30ch"><a href="{{ $featured.RelPermalink }}">{{ $featured.Title }}</a></h3>
+        <p style="font-size:1.02rem;max-width:62ch">{{ $featured.Description }}</p>
+        <div class="card-foot"><a href="{{ $featured.RelPermalink }}" class="btn btn-terra">Lire l'article</a></div>
+      </div>
+    </article>
+  </div>
+</section>
+{{ end }}
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Les rubriques</span><h2>Ce qu'on couvre</h2></div>
+    <div class="grid grid-4">
+      {{ $icons := dict "Bienfaits et santé" "heart" "Préparation et matériel" "thermo" "Variétés de thé" "leaf" "Tisanes et plantes" "sprout" "Culture et rituels" "book" }}
+      {{ range .Site.Taxonomies.categories.ByCount }}
+      <a href="{{ .Page.RelPermalink }}" class="cat-card">
+        <span class="ico">{{ partial "icon.html" (dict "n" (index $icons .Page.Title | default "cup") "s" 24) }}</span>
+        <h3>{{ .Page.Title }}</h3>
+        <span>{{ .Count }} article{{ if gt .Count 1 }}s{{ end }}</span>
+      </a>
       {{ end }}
     </div>
-    <div class="section-cta">
-      <a href="{{ "blog/" | relURL }}" class="btn btn-outline">Voir tous les articles</a>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Tous les articles</span><h2>À lire ensuite</h2></div>
+    <div class="grid grid-3">
+      {{ range first 6 (after 1 (sort $blog "Date" "desc")) }}
+        {{ partial "card-article.html" . }}
+      {{ end }}
     </div>
+    <div class="center mt-2"><a href="{{ "blog/" | relURL }}" class="btn btn-ghost">Voir les {{ len $blog }} articles</a></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap-narrow">
+    {{ partial "author-box.html" . }}
   </div>
 </section>
 {{ end }}

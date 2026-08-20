@@ -1,0 +1,83 @@
+# Guide d'infusion. Sources : pratique de degustation + temperatures usuelles des maisons de the.
+familles:
+  - id: vert-japon
+    nom: Thé vert japonais
+    famille: vert
+    couleur: "#6FA96B"
+    temp: "60 à 70 °C"
+    duree: "1 à 2 min"
+    dose: "5 g / L"
+    reinfusions: "2 à 3"
+    note: "Le plus fragile de tous. Au-delà de 70 °C, l'umami disparaît et l'amertume prend toute la place."
+  - id: vert-chine
+    nom: Thé vert chinois
+    famille: vert
+    couleur: "#8FBF7A"
+    temp: "75 à 80 °C"
+    duree: "2 à 3 min"
+    dose: "4 g / L"
+    reinfusions: "2 à 3"
+    note: "Plus tolérant que le japonais. Si ça tire sur l'amer, baissez la température avant de raccourcir le temps."
+  - id: blanc
+    nom: Thé blanc
+    famille: blanc
+    couleur: "#D8CFAE"
+    temp: "70 à 80 °C"
+    duree: "4 à 6 min"
+    dose: "6 g / L"
+    reinfusions: "3"
+    note: "Feuilles volumineuses, donc on dose au volume plutôt qu'au poids. Une infusion longue ne le rend pas amer."
+  - id: oolong
+    nom: Oolong
+    famille: oolong
+    couleur: "#C99A54"
+    temp: "85 à 90 °C"
+    duree: "3 à 5 min"
+    dose: "5 g / L"
+    reinfusions: "4 à 6"
+    note: "Le meilleur rapport plaisir/réinfusions. C'est le thé qui change le plus d'une infusion à l'autre."
+  - id: noir
+    nom: Thé noir
+    famille: noir
+    couleur: "#8C4A2F"
+    temp: "90 à 95 °C"
+    duree: "3 à 5 min"
+    dose: "4 g / L"
+    reinfusions: "1 à 2"
+    note: "Un Darjeeling de printemps se traite plutôt comme un oolong : 90 °C et 3 min suffisent."
+  - id: pu-erh
+    nom: Pu-erh
+    famille: sombre
+    couleur: "#5B3A29"
+    temp: "95 à 100 °C"
+    duree: "3 à 5 min"
+    dose: "5 g / L"
+    reinfusions: "5 et plus"
+    note: "Rincez les feuilles 10 secondes et jetez cette première eau : elle enlève le côté terreux de cave."
+  - id: matcha
+    nom: Matcha
+    famille: vert
+    couleur: "#7FB03F"
+    temp: "70 à 80 °C"
+    duree: "battu 20 s"
+    dose: "2 g / 70 ml"
+    reinfusions: "aucune"
+    note: "Ce n'est pas une infusion mais une suspension : on boit la feuille entière, d'où l'effet plus soutenu."
+  - id: rooibos
+    nom: Rooibos
+    famille: sans-theine
+    couleur: "#B4593C"
+    temp: "95 à 100 °C"
+    duree: "5 à 7 min"
+    dose: "6 g / L"
+    reinfusions: "1"
+    note: "Sans théine et sans amertume possible : on peut l'oublier dans la théière sans rien gâcher."
+  - id: tisane
+    nom: Tisane de plantes
+    famille: sans-theine
+    couleur: "#9C7CB0"
+    temp: "100 °C"
+    duree: "5 à 10 min"
+    dose: "1 c. à s. / tasse"
+    reinfusions: "aucune"
+    note: "Couvrez la tasse pendant l'infusion : sans couvercle, les huiles essentielles s'évaporent avec la vapeur."

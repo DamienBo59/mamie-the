@@ -1,12 +1,20 @@
 ---
 title: "Sencha vs Gyokuro : quel thé vert japonais choisir ?"
 date: 2026-02-04
-categories: ["Thés verts"]
-tags: ["sencha", "gyokuro", "japon", "comparatif"]
-author: "Mamie-Thé"
+lastmod: 2026-08-20
 description: "Comparatif détaillé entre les deux grands thés verts japonais : le Sencha du quotidien et le prestigieux Gyokuro."
 excerpt: "Sencha cultivé au soleil vs Gyokuro ombré 21 jours : deux thés verts japonais aux profils radicalement différents, du quotidien au prestige."
-icon: "compare"
+author: helene-vasseur
+categories: ["Variétés de thé"]
+tags: ["sencha", "gyokuro", "thé vert", "japon"]
+icon: "sprout"
+faq:
+  - q: "Quelle est la différence entre sencha et gyokuro ?"
+    a: "L'ombre. Le gyokuro est couvert environ trois semaines avant la récolte, ce qui fait grimper les acides aminés et chuter l'amertume. Résultat, une tasse beaucoup plus umami et plus ronde, et un prix nettement plus élevé."
+  - q: "Le gyokuro vaut-il son prix ?"
+    a: "Pour découvrir le thé vert japonais, non : un bon sencha coûte trois fois moins et pardonne mieux les erreurs de préparation. Le gyokuro se justifie quand on sait déjà maîtriser une eau à 60 °C."
+  - q: "À quelle température infuser un gyokuro ?"
+    a: "Entre 50 et 60 °C, plus bas que tout le reste, et sur un temps court. C'est le thé le plus sensible à la chaleur qui existe."
 ---
 
 Le Japon produit certains des thés verts les plus raffinés au monde. Parmi eux, le Sencha et le Gyokuro sont les deux stars incontestées. Mais quelles sont leurs différences ?

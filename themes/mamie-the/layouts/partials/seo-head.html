@@ -1,0 +1,69 @@
+{{- $site := .Site -}}
+{{- $authors := hugo.Data.authors -}}
+{{- $aid := .Params.author | default $site.Params.author -}}
+{{- $a := index $authors $aid -}}
+{{- $desc := .Description | default $site.Params.description -}}
+{{- $img := "" -}}{{- with .Params.image }}{{ $img = . | absURL }}{{ end -}}
+{{- $base := $site.BaseURL -}}
+{{- $pid := printf "%s#/schema/person/%s" $base $aid -}}
+
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="robots" content="{{ if .Params.noindex }}noindex,nofollow{{ else }}index,follow,max-image-preview:large,max-snippet:-1{{ end }}">
+{{ with $a }}<meta name="author" content="{{ .name }}">{{ end }}
+
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="{{ $site.Title }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ $site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with $img }}<meta property="og:image" content="{{ . }}">{{ end }}
+<meta name="twitter:card" content="{{ if $img }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ $site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta name="twitter:description" content="{{ $desc }}">
+{{ with $img }}<meta name="twitter:image" content="{{ . }}">{{ end }}
+{{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" title="{{ $site.Title }}" href="{{ .Permalink }}">{{ end }}
+
+{{/* ---- JSON-LD : on construit l'objet en Go puis on l'emet UNE fois avec safeJS.
+       Sans safeJS, l'auto-echappement JS de Go re-quote chaque jsonify et produit
+       "name":"\"Helene Vasseur\"", ce qui casse toutes les donnees structurees. ---- */}}
+{{- $graph := slice
+  (dict "@type" "Organization" "@id" (printf "%s#organization" $base) "name" $site.Title "url" $base "description" $site.Params.description)
+  (dict "@type" "WebSite" "@id" (printf "%s#website" $base) "url" $base "name" $site.Title "inLanguage" "fr-FR" "publisher" (dict "@id" (printf "%s#organization" $base)))
+-}}
+
+{{- with $a -}}
+  {{- $graph = $graph | append (dict
+      "@type" "Person" "@id" $pid "name" .name
+      "jobTitle" (index .jobTitle "fr") "description" (index .bio "fr")
+      "knowsAbout" .expertise "url" (printf "%sa-propos/" $base)) -}}
+{{- end -}}
+
+{{- if and .IsPage (eq .Section "blog") -}}
+  {{- $art := dict
+      "@type" "Article" "@id" (printf "%s#article" .Permalink)
+      "headline" .Title "description" $desc
+      "datePublished" (.Date.Format "2006-01-02")
+      "dateModified" ((.Lastmod | default .Date).Format "2006-01-02")
+      "inLanguage" "fr-FR" "mainEntityOfPage" .Permalink "wordCount" .WordCount
+      "publisher" (dict "@id" (printf "%s#organization" $base)) -}}
+  {{- with $img }}{{ $art = merge $art (dict "image" .) }}{{ end -}}
+  {{- with $a }}{{ $art = merge $art (dict "author" (dict "@id" $pid)) }}{{ end -}}
+  {{- with $.Params.categories }}{{ $art = merge $art (dict "articleSection" (index . 0)) }}{{ end -}}
+  {{- $graph = $graph | append $art -}}
+  {{- $crumbs := slice
+      (dict "@type" "ListItem" "position" 1 "name" "Accueil" "item" $base)
+      (dict "@type" "ListItem" "position" 2 "name" "Articles" "item" (printf "%sblog/" $base))
+      (dict "@type" "ListItem" "position" 3 "name" .Title) -}}
+  {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "itemListElement" $crumbs) -}}
+{{- end -}}
+
+{{- with .Params.faq -}}
+  {{- $qs := slice -}}
+  {{- range . -}}
+    {{- $qs = $qs | append (dict "@type" "Question" "name" .q "acceptedAnswer" (dict "@type" "Answer" "text" .a)) -}}
+  {{- end -}}
+  {{- $graph = $graph | append (dict "@type" "FAQPage" "mainEntity" $qs) -}}
+{{- end -}}
+
+<script type="application/ld+json">{{ (dict "@context" "https://schema.org" "@graph" $graph) | jsonify | safeJS }}</script>

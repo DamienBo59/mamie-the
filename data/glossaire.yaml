@@ -1,0 +1,49 @@
+termes:
+  - t: Astringence
+    d: "Sensation de sécheresse et de resserrement en bouche, due aux tanins. Ce n'est pas de l'amertume : l'astringence est une texture, l'amertume un goût."
+  - t: Bancha
+    d: "Thé vert japonais de récolte tardive, issu de feuilles plus grandes et plus basses sur la plante. Peu de théine, très désaltérant, très bon marché."
+  - t: Camellia sinensis
+    d: "L'unique espèce d'arbuste dont viennent tous les vrais thés. Vert, noir, blanc, oolong et pu-erh sont la même plante, seule la transformation change."
+  - t: Chai
+    d: "En hindi, le mot signifie simplement « thé ». Le masala chai désigne le thé noir infusé au lait avec un mélange d'épices."
+  - t: Darjeeling
+    d: "Région du nord de l'Inde, au pied de l'Himalaya. Ses thés noirs de printemps sont si délicats qu'ils se préparent comme des oolongs, à 90 °C."
+  - t: Dosage
+    d: "Quantité de feuilles par volume d'eau. Repère simple : 4 à 5 g par litre pour un thé de feuilles, 6 g pour un thé volumineux comme le blanc."
+  - t: Earl Grey
+    d: "Thé noir aromatisé à l'huile essentielle de bergamote. Ce n'est pas une origine mais une recette, née au XIXe siècle en Angleterre."
+  - t: Flush
+    d: "Récolte, en Inde. Le first flush de mars-avril est végétal et vif, le second flush de mai-juin plus rond et muscaté."
+  - t: Gaiwan
+    d: "Petit bol chinois à couvercle qui sert à la fois de théière et de tasse. Idéal pour les réinfusions courtes et successives."
+  - t: Genmaicha
+    d: "Thé vert japonais mélangé à du riz grillé et soufflé. Goût de céréale toastée, très peu d'amertume, parfait en fin de repas."
+  - t: Gyokuro
+    d: "Thé vert japonais d'exception, ombré trois semaines avant récolte. L'ombre concentre les acides aminés : c'est le thé le plus umami qui existe."
+  - t: Hojicha
+    d: "Thé vert japonais torréfié à haute température. La torréfaction détruit une grande part de la théine, ce qui en fait un thé du soir."
+  - t: Infuseur
+    d: "Accessoire qui contient les feuilles pendant l'infusion. Plus il est large, mieux c'est : les feuilles doivent pouvoir se déployer."
+  - t: Matcha
+    d: "Poudre de thé vert ombré, battue dans l'eau plutôt qu'infusée. On ingère la feuille entière, d'où un effet plus marqué qu'un thé vert classique."
+  - t: Oolong
+    d: "Thé semi-oxydé, entre le vert et le noir. Le plus vaste des univers du thé, du très floral au très torréfié selon le taux d'oxydation."
+  - t: Oxydation
+    d: "Réaction enzymatique des feuilles au contact de l'air, qui les fait brunir et développe les arômes. C'est elle qui distingue un vert d'un noir, pas la fermentation."
+  - t: Pu-erh
+    d: "Thé sombre du Yunnan, réellement fermenté et vieilli, parfois des décennies. Se rince avant infusion et supporte de nombreuses réinfusions."
+  - t: Rooibos
+    d: "Arbuste d'Afrique du Sud, sans aucun lien botanique avec le thé. Naturellement sans théine et impossible à rendre amer."
+  - t: Sencha
+    d: "Le thé vert le plus bu au Japon, environ trois quarts de la production. Feuilles roulées en aiguilles, tasse végétale et iodée."
+  - t: Théine
+    d: "Exactement la même molécule que la caféine. Le nom diffère par tradition, pas par chimie. Dans le thé, elle est libérée plus lentement grâce aux tanins."
+  - t: Tisane
+    d: "Infusion de plantes qui ne contient pas de thé. Verveine, camomille, menthe : aucune théine, aucune limite de temps d'infusion."
+  - t: Umami
+    d: "Cinquième saveur, entre le bouillon et le sucré-salé. Très présente dans les verts japonais ombrés, c'est ce qui les rend enveloppants."
+  - t: Vrac
+    d: "Thé vendu en feuilles libres, par opposition au sachet. La feuille y est entière et peut se déployer, ce qui change tout au goût."
+  - t: Zhong
+    d: "Autre nom du gaiwan, surtout employé à Taïwan."

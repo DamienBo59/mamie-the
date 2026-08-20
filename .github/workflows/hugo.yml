@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - claude/hugo-static-site-HZd2t
 
 permissions:
   contents: read
@@ -23,7 +22,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.139.0
+      HUGO_VERSION: 0.161.1
     steps:
       - name: Install Hugo CLI
         run: |
@@ -31,6 +30,8 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

@@ -1,0 +1,12 @@
+{{ $aid := .Params.author | default .Site.Params.author }}
+{{ with index hugo.Data.authors $aid }}
+<div class="author-box">
+  <span class="av">{{ substr .name 0 1 }}</span>
+  <div>
+    <h3>{{ .name }}</h3>
+    <span class="role">{{ index .jobTitle "fr" }}</span>
+    <p>{{ index .bio "fr" }}</p>
+    <div class="expertise">{{ range .expertise }}<span class="chip">{{ . }}</span>{{ end }}</div>
+  </div>
+</div>
+{{ end }}

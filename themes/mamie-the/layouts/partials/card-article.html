@@ -1,0 +1,18 @@
+<article class="card">
+  <a href="{{ .RelPermalink }}" class="card-media" aria-label="{{ .Title }}">
+    {{ if .Params.image }}<img src="{{ .Params.image | relURL }}" alt="{{ .Params.imageAlt | default .Title }}" loading="lazy" width="600" height="375">
+    {{ else }}<span class="mono" aria-hidden="true">{{ partial "icon.html" (dict "n" (.Params.icon | default "leaf") "s" 46) }}</span>{{ end }}
+  </a>
+  <div class="card-body">
+    <div class="meta">
+      {{ with .Params.categories }}<span class="chip">{{ index . 0 }}</span>{{ end }}
+      <span>{{ .ReadingTime }} min</span>
+    </div>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .Params.excerpt | default .Description | truncate 130 }}</p>
+    <div class="card-foot">
+      <time class="meta" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+      <a href="{{ .RelPermalink }}" class="read-more">Lire &rarr;</a>
+    </div>
+  </div>
+</article>

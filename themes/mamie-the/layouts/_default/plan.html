@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="article-head">
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="{{ "/" | relURL }}">Accueil</a> &rsaquo; <span>{{ .Title }}</span></nav>
+    <h1>{{ .Title }}</h1>
+    <p class="article-lead">{{ .Description }}</p>
+  </div>
+</div>
+<section class="section">
+  <div class="wrap-narrow">
+    <div class="prose">
+      <h2>Les outils</h2>
+      <ul>{{ range where .Site.RegularPages "Section" "" }}{{ if ne .RelPermalink "/plan-du-site/" }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}{{ end }}</ul>
+      <h2>Les rubriques</h2>
+      <ul>{{ range .Site.Taxonomies.categories.ByCount }}<li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>{{ end }}</ul>
+      <h2>Tous les articles</h2>
+      <ul>{{ range sort (where .Site.RegularPages "Section" "blog") "Date" "desc" }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="meta">{{ .Date.Format "2 Jan 2006" }}</span></li>{{ end }}</ul>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,54 @@
+{{ define "main" }}
+{{ $f := hugo.Data.infusion.familles }}
+<div class="article-head">
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="{{ "/" | relURL }}">Accueil</a> &rsaquo; <span>{{ .Title }}</span></nav>
+    <span class="eyebrow">Outil de référence</span>
+    <h1>{{ .Title }}</h1>
+    <p class="article-lead">{{ .Description }}</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="infusion-filters" role="group" aria-label="Filtrer par famille">
+      <button class="filter-btn on" data-filter="tous">Tout ({{ len $f }})</button>
+      <button class="filter-btn" data-filter="vert">Thés verts</button>
+      <button class="filter-btn" data-filter="noir">Thés noirs</button>
+      <button class="filter-btn" data-filter="oolong">Oolong</button>
+      <button class="filter-btn" data-filter="blanc">Thés blancs</button>
+      <button class="filter-btn" data-filter="sombre">Pu-erh</button>
+      <button class="filter-btn" data-filter="sans-theine">Sans théine</button>
+    </div>
+
+    <div class="infusion-grid">
+      {{ range $f }}
+      <div class="inf-card" data-famille="{{ .famille }}">
+        <header>
+          <span class="dot" style="background:{{ .couleur }}"></span>
+          <h3>{{ .nom }}</h3>
+        </header>
+        <div class="inf-rows">
+          <div class="inf-row"><span>Température</span><span>{{ .temp }}</span></div>
+          <div class="inf-row"><span>Durée</span><span>{{ .duree }}</span></div>
+          <div class="inf-row"><span>Dosage</span><span>{{ .dose }}</span></div>
+          <div class="inf-row"><span>Réinfusions</span><span>{{ .reinfusions }}</span></div>
+        </div>
+        <p class="inf-note">{{ .note }}</p>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="wrap-narrow" style="margin-top:3rem;padding:0">
+      <div class="prose">{{ .Content }}</div>
+      {{ with .Params.faq }}
+      <section class="faq">
+        <h2>Questions fréquentes</h2>
+        {{ range . }}<details><summary>{{ .q }}</summary><div class="answer">{{ .a }}</div></details>{{ end }}
+      </section>
+      {{ end }}
+      {{ partial "author-box.html" . }}
+    </div>
+  </div>
+</section>
+{{ end }}

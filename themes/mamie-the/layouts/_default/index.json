@@ -1,0 +1,7 @@
+{{- $pages := where .Site.RegularPages "Params.noindex" "!=" true -}}
+[
+{{- range $i, $p := $pages -}}
+{{- if $i }},{{ end }}
+{"title":{{ $p.Title | jsonify }},"url":{{ $p.RelPermalink | jsonify }},"description":{{ ($p.Description | default ($p.Summary | plainify | truncate 140)) | jsonify }},"tags":{{ (delimit (union ($p.Params.tags | default slice) ($p.Params.categories | default slice)) " ") | jsonify }}}
+{{- end -}}
+]

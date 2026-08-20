@@ -1,29 +1,25 @@
 {{ define "main" }}
-<section class="page-header">
-  <h1 class="page-title">{{ .Title }}</h1>
-  {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
-  {{ with .Content }}<div class="page-content">{{ . }}</div>{{ end }}
-</section>
+<div class="article-head">
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="{{ "/" | relURL }}">Accueil</a> &rsaquo; <span>{{ .Title }}</span></nav>
+    <span class="eyebrow">{{ if eq .Kind "term" }}Rubrique{{ else }}Section{{ end }}</span>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="article-lead">{{ . }}</p>{{ else }}{{ with .Content }}<div class="article-lead">{{ . }}</div>{{ end }}{{ end }}
+    <p class="meta" style="margin-top:1rem">{{ len .Pages }} article{{ if gt (len .Pages) 1 }}s{{ end }}</p>
+  </div>
+</div>
 
-<section class="posts-section">
-  <div class="section-inner">
-    <div class="posts-grid">
-      {{ range .Pages }}
-      <article class="post-card">
-        {{ with .Params.icon }}{{ partial "card-icon.html" . }}{{ end }}
-        <div class="post-card-body">
-          <div class="post-meta">
-            {{ with .Params.categories }}
-            <span class="post-category">{{ index . 0 }}</span>
-            {{ end }}
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
-          </div>
-          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-          <p>{{ with .Params.excerpt }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}</p>
-        </div>
-      </article>
-      {{ end }}
-    </div>
+<section class="section">
+  <div class="wrap">
+    {{ $p := .Paginate (sort .Pages "Date" "desc") 9 }}
+    <div class="grid grid-3">{{ range $p.Pages }}{{ partial "card-article.html" . }}{{ end }}</div>
+    {{ if gt $p.TotalPages 1 }}
+    <nav class="pager" aria-label="Pagination">
+      {{ if $p.HasPrev }}<a href="{{ $p.Prev.URL }}">&larr; Précédent</a>{{ end }}
+      {{ range $p.Pagers }}{{ if eq . $p }}<span class="cur">{{ .PageNumber }}</span>{{ else }}<a href="{{ .URL }}">{{ .PageNumber }}</a>{{ end }}{{ end }}
+      {{ if $p.HasNext }}<a href="{{ $p.Next.URL }}">Suivant &rarr;</a>{{ end }}
+    </nav>
+    {{ end }}
   </div>
 </section>
 {{ end }}

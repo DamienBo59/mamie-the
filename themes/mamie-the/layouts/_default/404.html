@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="section">
+  <div class="wrap-narrow center">
+    <span class="eyebrow" style="justify-content:center">Erreur 404</span>
+    <h1>Cette page a fini à la poubelle, comme un fond de théière</h1>
+    <p class="lede">La page que vous cherchez n'existe pas ou a changé d'adresse. Voici de quoi rebondir.</p>
+    <div class="hero-actions" style="justify-content:center">
+      <a href="{{ "/" | relURL }}" class="btn btn-primary">Retour à l'accueil</a>
+      <a href="{{ "blog/" | relURL }}" class="btn btn-ghost">Tous les articles</a>
+    </div>
+  </div>
+</section>
+{{ end }}

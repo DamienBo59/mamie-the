@@ -1,0 +1,183 @@
+# Quiz "Trouver mon thé". 6 questions, chaque reponse donne des points a des profils.
+# Le resultat renvoie vers NOS articles : on est un media, on ne vend rien.
+intro:
+  titre: "Trouvez le thé qui vous correspond"
+  soustitre: "Six questions, une minute. À la fin, un type de thé, sa fiche d'infusion et nos articles pour aller plus loin."
+questions:
+  - q: "À quel moment buvez-vous du thé le plus souvent ?"
+    hint: "Choisissez le moment le plus fréquent, pas l'exception."
+    options:
+      - l: "Le matin"
+        s: "Au réveil, pour démarrer"
+        i: sun
+        p: {noir-corse: 3, matcha: 3, earl-grey: 1}
+      - l: "L'après-midi"
+        s: "Vers 16 h, avec ou sans gâteau"
+        i: cup
+        p: {earl-grey: 3, oolong: 2, sencha: 1}
+      - l: "Le soir"
+        s: "Après le dîner, pour se poser"
+        i: moon
+        p: {tisane: 4, sencha: 1}
+  - q: "La caféine, vous en pensez quoi ?"
+    hint: "La théine du thé est exactement la même molécule que la caféine."
+    options:
+      - l: "J'en veux"
+        s: "C'est ce que je cherche"
+        i: flame
+        p: {matcha: 4, noir-corse: 3}
+      - l: "Avec modération"
+        s: "Un peu, pas trop"
+        i: scale
+        p: {sencha: 2, oolong: 2, earl-grey: 1}
+      - l: "Aucune"
+        s: "Sinon je ne dors pas"
+        i: drop
+        p: {tisane: 5}
+  - q: "Quel goût vous attire le plus ?"
+    hint: "Le critère qui départage vraiment les familles de thé."
+    options:
+      - l: "Végétal et frais"
+        s: "Herbe coupée, iode"
+        i: sprout
+        p: {sencha: 4, matcha: 2}
+      - l: "Corsé et malté"
+        s: "Franc, qui tient au corps"
+        i: flame
+        p: {noir-corse: 4}
+      - l: "Parfumé et floral"
+        s: "Agrumes, fleurs, épices"
+        i: sparkle
+        p: {earl-grey: 4, oolong: 1}
+      - l: "Doux et rond"
+        s: "Sans aucune amertume"
+        i: heart
+        p: {tisane: 2, oolong: 2}
+  - q: "Vous le buvez comment ?"
+    hint: "Ça change le type de thé qui tient le coup."
+    options:
+      - l: "Nature"
+        s: "Rien dedans"
+        i: leaf
+        p: {sencha: 2, oolong: 2}
+      - l: "Avec un nuage de lait"
+        s: "À l'anglaise"
+        i: drop
+        p: {noir-corse: 3, earl-grey: 1}
+      - l: "Un peu sucré"
+        s: "Sucre ou miel"
+        i: heart
+        p: {tisane: 2, earl-grey: 2}
+      - l: "En latte"
+        s: "Mousse de lait, sirop"
+        i: cup
+        p: {matcha: 4, earl-grey: 1}
+  - q: "Combien de temps y consacrez-vous ?"
+    hint: "Le vrai critère : un thé qui demande un rituel ne se boit pas en courant."
+    options:
+      - l: "Deux minutes"
+        s: "Je suis pressé"
+        i: clock
+        p: {noir-corse: 2, earl-grey: 2, tisane: 1}
+      - l: "Le temps qu'il faut"
+        s: "Simple mais soigné"
+        i: cup
+        p: {sencha: 2, tisane: 1}
+      - l: "J'aime le rituel"
+        s: "Plusieurs infusions de suite"
+        i: compass
+        p: {oolong: 4, matcha: 3}
+  - q: "Où en êtes-vous avec le thé ?"
+    hint: "Aucune mauvaise réponse, ça sert juste à calibrer le conseil."
+    options:
+      - l: "Je débute"
+        s: "Je sors du sachet"
+        i: book
+        p: {earl-grey: 2, tisane: 2, noir-corse: 1}
+      - l: "J'ai mes habitudes"
+        s: "Je sais ce que j'aime"
+        i: cup
+        p: {sencha: 2, noir-corse: 1, oolong: 1}
+      - l: "Je pinaille"
+        s: "Thermomètre et balance"
+        i: thermo
+        p: {oolong: 3, matcha: 2, sencha: 2}
+profils:
+  sencha:
+    nom: "Un thé vert japonais"
+    accroche: "Sencha ou gyokuro"
+    ico: sprout
+    texte: "Vous cherchez le végétal et la fraîcheur, et vous acceptez d'être précis. C'est exactement le terrain des verts japonais : magnifiques quand la température est juste, franchement amers dès qu'on la rate."
+    temp: "60-70 °C"
+    duree: "1-2 min"
+    dose: "5 g / L"
+    liens:
+      - t: "Sencha ou gyokuro : lequel choisir"
+        u: "/blog/sencha-vs-gyokuro/"
+      - t: "La température parfaite d'infusion"
+        u: "/blog/temperature-infusion-parfaite/"
+  noir-corse:
+    nom: "Un thé noir corsé"
+    accroche: "Assam, Ceylan, breakfast"
+    ico: flame
+    texte: "Vous voulez un thé qui réveille et qui tient au corps, éventuellement avec un nuage de lait. Les thés noirs d'Assam et les mélanges breakfast sont faits pour ça, et ils pardonnent les approximations."
+    temp: "90-95 °C"
+    duree: "3-5 min"
+    dose: "4 g / L"
+    liens:
+      - t: "Guide des thés noirs classiques"
+        u: "/blog/guide-thes-noirs-classiques/"
+      - t: "La température parfaite d'infusion"
+        u: "/blog/temperature-infusion-parfaite/"
+  earl-grey:
+    nom: "Un thé noir parfumé"
+    accroche: "Earl Grey et compagnie"
+    ico: sparkle
+    texte: "Le parfum vous attire plus que le terroir, et c'est une excellente porte d'entrée. Un Earl Grey correct est plus agréable qu'un grand cru mal préparé, et il supporte le lait comme le sucre."
+    temp: "90-95 °C"
+    duree: "3-4 min"
+    dose: "4 g / L"
+    liens:
+      - t: "L'histoire de l'Earl Grey"
+        u: "/blog/histoire-earl-grey/"
+      - t: "Guide des thés noirs classiques"
+        u: "/blog/guide-thes-noirs-classiques/"
+  oolong:
+    nom: "Un oolong"
+    accroche: "Le thé des patients"
+    ico: compass
+    texte: "Vous aimez le rituel et les infusions successives : l'oolong est le thé qui vous le rendra le mieux. C'est le seul qui change franchement de goût entre la première et la cinquième infusion."
+    temp: "85-90 °C"
+    duree: "3-5 min"
+    dose: "5 g / L"
+    liens:
+      - t: "Le guide d'infusion complet"
+        u: "/guide-infusion/"
+      - t: "Le glossaire du thé"
+        u: "/glossaire/"
+  matcha:
+    nom: "Du matcha"
+    accroche: "La feuille entière, battue"
+    ico: sun
+    texte: "Vous cherchez de l'énergie et un vrai geste. Le matcha n'est pas une infusion mais une suspension : on boit la feuille entière, ce qui explique son effet plus soutenu qu'un thé vert classique."
+    temp: "70-80 °C"
+    duree: "battu 20 s"
+    dose: "2 g / 70 ml"
+    liens:
+      - t: "Les bienfaits du matcha"
+        u: "/blog/the-matcha-bienfaits/"
+      - t: "Bienfaits du thé vert et du matcha"
+        u: "/blog/bienfaits-the-vert-matcha/"
+  tisane:
+    nom: "Une tisane"
+    accroche: "Sans théine, sans compromis"
+    ico: heart
+    texte: "Vous voulez la tasse chaude sans la caféine. Les tisanes et le rooibos n'en contiennent pas du tout, et ils ont un avantage pratique : on ne peut pas les rendre amers, même en les oubliant."
+    temp: "95-100 °C"
+    duree: "5-10 min"
+    dose: "1 c. à s. / tasse"
+    liens:
+      - t: "Les tisanes de nos grands-mères pour l'hiver"
+        u: "/blog/tisanes-grand-mere-hiver/"
+      - t: "Le guide d'infusion complet"
+        u: "/guide-infusion/"

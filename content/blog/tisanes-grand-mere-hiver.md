@@ -1,12 +1,20 @@
 ---
 title: "5 tisanes de grand-mère pour passer l'hiver en douceur"
 date: 2026-01-20
-categories: ["Tisanes"]
-tags: ["hiver", "remèdes", "camomille", "thym"]
-author: "Mamie-Thé"
+lastmod: 2026-08-20
 description: "Les recettes de tisanes transmises de génération en génération pour affronter le froid et les petits maux de l'hiver."
 excerpt: "Cinq recettes de tisanes intemporelles — thym-miel-citron, camomille, tilleul, verveine et gingembre — pour traverser l'hiver sereinement."
-icon: "herbal"
+author: helene-vasseur
+categories: ["Tisanes et plantes"]
+tags: ["tisane", "plantes", "hiver", "thym"]
+icon: "drop"
+faq:
+  - q: "Une tisane peut-elle être amère ?"
+    a: "Pratiquement jamais si elle est faite de fleurs ou de feuilles, contrairement au thé. En revanche, une tisane d'écorces ou de racines gagne à être bouillie plutôt qu'infusée, et là l'amertume est possible."
+  - q: "Combien de temps infuser une tisane ?"
+    a: "Cinq à dix minutes, tasse couverte. Sans couvercle, les composés aromatiques volatils partent avec la vapeur, et c'est justement ce qu'on cherche."
+  - q: "Les tisanes contiennent-elles de la caféine ?"
+    a: "Aucune, dès lors qu'il n'y a pas de thé dans le mélange. Attention aux mélanges du commerce dits « bien-être », qui ajoutent parfois du thé vert ou du maté sans le mettre en avant."
 ---
 
 Quand le froid s'installe et que les premiers rhumes pointent leur nez, rien ne vaut les recettes éprouvées de nos grands-mères. Voici cinq tisanes intemporelles pour traverser l'hiver sereinement.

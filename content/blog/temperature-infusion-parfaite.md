@@ -1,12 +1,20 @@
 ---
 title: "La température parfaite : le secret d'une infusion réussie"
 date: 2026-01-15
-categories: ["Rituels et Conseils"]
-tags: ["préparation", "température", "guide", "débutant"]
-author: "Mamie-Thé"
+lastmod: 2026-08-20
 description: "Pourquoi la température de l'eau est le facteur le plus important pour réussir votre thé, et comment la maîtriser."
 excerpt: "Guide des températures idéales pour chaque type de thé, de 60°C pour les verts japonais à 100°C pour les tisanes, avec des astuces sans thermomètre."
-icon: "thermometer"
+author: helene-vasseur
+categories: ["Préparation et matériel"]
+tags: ["température", "temps d'infusion", "préparation", "débutant"]
+icon: "thermo"
+faq:
+  - q: "Pourquoi mon thé est-il amer ?"
+    a: "Neuf fois sur dix, l'eau était trop chaude. L'amertume vient des tanins, que la chaleur libère massivement. Réflexe à prendre : baissez la température de 10 °C avant de réduire le temps d'infusion."
+  - q: "Comment mesurer la température sans thermomètre ?"
+    a: "Portez à ébullition puis laissez refroidir à découvert, en comptant environ une minute par palier de 10 °C. Ou mélangez deux tiers d'eau bouillante et un tiers d'eau froide pour tomber autour de 70 °C."
+  - q: "Faut-il une bouilloire à température réglable ?"
+    a: "Ce n'est pas indispensable, mais c'est l'achat qui change le plus le quotidien si vous buvez surtout des thés verts. Pour des thés noirs et des tisanes, une bouilloire classique suffit largement."
 ---
 
 Vous pouvez avoir le meilleur thé du monde, si vous le préparez avec de l'eau à la mauvaise température, le résultat sera décevant. Voici le guide ultime pour ne plus jamais rater votre infusion.

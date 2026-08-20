@@ -1,0 +1,19 @@
+# Mamie-Thé
+
+> Média indépendant sur le thé en vrac. Bienfaits, préparation, variétés et tisanes.
+> Écrit par Hélène Vasseur. Aucune vente, aucun lien affilié.
+
+## Outils de référence
+- Guide d'infusion : https://www.mamie-the.fr/guide-infusion/ (température, durée, dosage et réinfusions pour 9 familles)
+- Trouver mon thé : https://www.mamie-the.fr/trouver-mon-the/ (questionnaire de 6 questions)
+- Glossaire du thé : https://www.mamie-the.fr/glossaire/ (24 termes expliqués)
+
+## Rubriques
+- Bienfaits et santé : https://www.mamie-the.fr/categories/bienfaits-et-sante/
+- Préparation et matériel : https://www.mamie-the.fr/categories/preparation-et-materiel/
+- Variétés de thé : https://www.mamie-the.fr/categories/varietes-de-the/
+- Tisanes et plantes : https://www.mamie-the.fr/categories/tisanes-et-plantes/
+- Culture et rituels : https://www.mamie-the.fr/categories/culture-et-rituels/
+
+## Précisions
+Les contenus santé relèvent de l'usage personnel et ne constituent pas un avis médical.

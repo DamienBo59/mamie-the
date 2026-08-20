@@ -1,12 +1,20 @@
 ---
 title: "Les bienfaits insoupçonnés du thé vert Matcha"
 date: 2026-02-01
-categories: ["Thés verts"]
-tags: ["matcha", "antioxydants", "japon"]
-author: "Mamie-Thé"
+lastmod: 2026-08-20
 description: "Découvrez pourquoi le Matcha est considéré comme un super-aliment et comment l'intégrer dans votre quotidien."
 excerpt: "Super-aliment japonais, le Matcha se consomme en poudre pour absorber 100% des nutriments et profiter d'une énergie calme et durable."
-icon: "leaves"
+author: helene-vasseur
+categories: ["Bienfaits et santé"]
+tags: ["thé vert", "matcha", "bienfaits", "antioxydants"]
+icon: "heart"
+faq:
+  - q: "Le thé vert fait-il vraiment maigrir ?"
+    a: "Aucun thé ne fait maigrir seul. Les catéchines du thé vert ont un effet mesuré mais modeste sur le métabolisme, très loin de compenser une alimentation déséquilibrée. Le vrai intérêt est ailleurs : c'est une boisson chaude à zéro calorie qui remplace des boissons sucrées."
+  - q: "Combien de tasses de thé vert par jour ?"
+    a: "Trois à quatre tasses correspondent à ce qu'on retrouve dans la plupart des travaux sur le sujet. Au-delà, la question devient celle de la caféine et du fer : le thé gêne l'absorption du fer non héminique, donc mieux vaut le boire entre les repas plutôt que pendant."
+  - q: "Le matcha est-il plus concentré qu'un thé vert infusé ?"
+    a: "Oui, mécaniquement : on ingère la feuille entière réduite en poudre au lieu de boire son infusion. Tout ce que contient la feuille se retrouve dans la tasse, caféine comprise."
 ---
 
 Le Matcha, cette poudre d'un vert éclatant originaire du Japon, est bien plus qu'une simple tendance. Utilisé depuis des siècles dans la cérémonie du thé japonaise, il recèle des trésors de bienfaits pour la santé.

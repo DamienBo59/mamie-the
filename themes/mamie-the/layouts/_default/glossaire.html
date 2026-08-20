@@ -1,0 +1,40 @@
+{{ define "main" }}
+{{ $t := sort hugo.Data.glossaire.termes "t" }}
+<div class="article-head">
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="{{ "/" | relURL }}">Accueil</a> &rsaquo; <span>{{ .Title }}</span></nav>
+    <span class="eyebrow">Référence</span>
+    <h1>{{ .Title }}</h1>
+    <p class="article-lead">{{ .Description }}</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap-narrow">
+    {{ $groups := dict }}
+    {{ range $t }}
+      {{ $l := upper (substr .t 0 1) }}
+      {{ $cur := index $groups $l | default slice }}
+      {{ $groups = merge $groups (dict $l ($cur | append .)) }}
+    {{ end }}
+
+    <nav class="glossary-nav" aria-label="Naviguer par lettre">
+      {{ range $l, $items := $groups }}<a href="#l-{{ $l }}">{{ $l }}</a>{{ end }}
+    </nav>
+
+    {{ range $l, $items := $groups }}
+    <div class="gloss-group" id="l-{{ $l }}">
+      <h2 class="gloss-letter">{{ $l }}</h2>
+      <dl>
+        {{ range $items }}
+        <div class="gloss-item"><dt>{{ .t }}</dt><dd>{{ .d }}</dd></div>
+        {{ end }}
+      </dl>
+    </div>
+    {{ end }}
+
+    <div class="prose">{{ .Content }}</div>
+    {{ partial "author-box.html" . }}
+  </div>
+</section>
+{{ end }}

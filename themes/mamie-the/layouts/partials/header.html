@@ -1,26 +1,37 @@
 <header class="site-header">
-  <div class="header-inner">
-    <a href="{{ .Site.Home.RelPermalink }}" class="logo">
-      <span class="logo-icon">&#9749;</span>
-      <span class="logo-text">Mamie-Thé</span>
+  <div class="header-in">
+    <a href="{{ "/" | relURL }}" class="brand" aria-label="{{ .Site.Title }}, accueil">
+      {{ partial "logo.html" . }}
+      <span>
+        <span class="brand-text">{{ .Site.Title }}</span>
+        <span class="brand-sub">Le média du thé en vrac</span>
+      </span>
     </a>
-    <nav class="main-nav">
-      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
-        <span class="hamburger"></span>
-      </button>
-      <ul class="nav-list">
-        {{ range .Site.Menus.main }}
-        <li><a href="{{ .URL | relURL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a></li>
-        {{ end }}
-      </ul>
+
+    <nav class="nav" aria-label="Navigation principale">
+      {{ range .Site.Menus.main }}
+        {{ $cta := eq .Name "Trouver mon thé" }}
+        <a href="{{ .URL | relURL }}" class="{{ if $cta }}nav-cta{{ else if $.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a>
+      {{ end }}
+      <button class="search-btn" id="open-search" aria-label="Rechercher sur le site">{{ partial "icon.html" (dict "n" "search" "s" 18) }}</button>
     </nav>
+
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-mobile">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+
+  <nav class="nav-mobile" id="nav-mobile" aria-label="Navigation mobile">
+    {{ range .Site.Menus.main }}<a href="{{ .URL | relURL }}">{{ .Name }}</a>{{ end }}
+    <a href="#" id="open-search-m">Rechercher</a>
+  </nav>
 </header>
-<script>
-document.querySelector('.nav-toggle').addEventListener('click', function() {
-  const nav = document.querySelector('.nav-list');
-  const expanded = this.getAttribute('aria-expanded') === 'true';
-  this.setAttribute('aria-expanded', !expanded);
-  nav.classList.toggle('open');
-});
-</script>
+
+<div class="search-modal" id="search-modal" role="dialog" aria-modal="true" aria-label="Recherche">
+  <div class="search-panel">
+    <input type="search" id="search-input" placeholder="Chercher un thé, une question, une plante…" autocomplete="off" aria-label="Votre recherche">
+    <div class="search-results" id="search-results">
+      <p class="search-empty">Tapez au moins deux lettres.</p>
+    </div>
+  </div>
+</div>

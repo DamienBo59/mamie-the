@@ -1,51 +1,102 @@
-baseURL = 'https://DamienBo59.github.io/mamie-the/'
-languageCode = 'fr'
+baseURL = 'https://www.mamie-the.fr/'
+locale = 'fr-FR'
 defaultContentLanguage = 'fr'
 title = 'Mamie-Thé'
 theme = 'mamie-the'
 removePathAccents = true
+enableRobotsTXT = true
+enableEmoji = false
+summaryLength = 30
+buildFuture = false
 
 [params]
-  description = "L'art de l'infusion, les secrets de nos grands-mères. Plongez dans l'univers fascinant du thé."
+  description = "Le média du thé en vrac : bienfaits, préparation, variétés et tisanes. Des guides précis, testés et écrits par une passionnée."
   tagline = "L'art de l'infusion, les secrets de nos grands-mères"
+  author = "helene-vasseur"
+  logoText = "Mamie-Thé"
+  siteStarted = 2026
+  # Aucun formulaire d'inscription n'est branché : pas de newsletter tant qu'il n'y a pas de service derrière.
 
-[menus]
-  [[menus.main]]
-    name = 'Accueil'
-    url = '/'
-    weight = 1
-  [[menus.main]]
-    name = 'Thés verts'
-    url = '/categories/thes-verts/'
-    weight = 2
-  [[menus.main]]
-    name = 'Thés noirs'
-    url = '/categories/thes-noirs/'
-    weight = 3
-  [[menus.main]]
-    name = 'Tisanes'
-    url = '/categories/tisanes/'
-    weight = 4
-  [[menus.main]]
-    name = 'Rituels & Conseils'
-    url = '/categories/rituels-et-conseils/'
-    weight = 5
-  [[menus.main]]
-    name = 'Le Blog'
-    url = '/blog/'
-    weight = 6
+[author]
+  name = "Hélène Vasseur"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+  [markup.highlight]
+    noClasses = false
+    style = 'friendly'
 
 [taxonomies]
   category = 'categories'
   tag = 'tags'
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[related]
+  includeNewer = true
+  threshold = 40
+  toLower = true
+  [[related.indices]]
+    name = 'categories'
+    weight = 60
+  [[related.indices]]
+    name = 'tags'
+    weight = 40
 
 [outputs]
-  home = ['html']
-  section = ['html']
+  home = ['html', 'rss', 'json']
+  section = ['html', 'rss']
   taxonomy = ['html']
-  term = ['html']
+  term = ['html', 'rss']
+
+[outputFormats]
+  [outputFormats.json]
+    mediaType = 'application/json'
+    baseName = 'index'
+    isPlainText = true
+
+[menus]
+  [[menus.main]]
+    name = 'Bienfaits'
+    url = '/categories/bienfaits-et-sante/'
+    weight = 1
+  [[menus.main]]
+    name = 'Préparation'
+    url = '/categories/preparation-et-materiel/'
+    weight = 2
+  [[menus.main]]
+    name = 'Variétés'
+    url = '/categories/varietes-de-the/'
+    weight = 3
+  [[menus.main]]
+    name = 'Tisanes'
+    url = '/categories/tisanes-et-plantes/'
+    weight = 4
+  [[menus.main]]
+    name = "Guide d'infusion"
+    url = '/guide-infusion/'
+    weight = 5
+  [[menus.main]]
+    name = 'Trouver mon thé'
+    url = '/trouver-mon-the/'
+    weight = 6
+
+  [[menus.footer]]
+    name = 'À propos'
+    url = '/a-propos/'
+    weight = 1
+  [[menus.footer]]
+    name = 'Glossaire du thé'
+    url = '/glossaire/'
+    weight = 2
+  [[menus.footer]]
+    name = 'Tous les articles'
+    url = '/blog/'
+    weight = 3
+  [[menus.footer]]
+    name = 'Plan du site'
+    url = '/plan-du-site/'
+    weight = 4

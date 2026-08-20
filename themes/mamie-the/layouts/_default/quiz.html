@@ -1,0 +1,138 @@
+{{ define "main" }}
+{{ $q := hugo.Data.quiz }}
+<div class="article-head">
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="{{ "/" | relURL }}">Accueil</a> &rsaquo; <span>{{ .Title }}</span></nav>
+    <span class="eyebrow">Outil</span>
+    <h1>{{ $q.intro.titre }}</h1>
+    <p class="article-lead">{{ $q.intro.soustitre }}</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="quiz" id="quiz">
+      <div class="quiz-top">
+        <span class="quiz-step" id="q-step">Question 1 sur {{ len $q.questions }}</span>
+        <span class="progress"><i id="q-bar"></i></span>
+      </div>
+
+      <div class="quiz-body" id="q-body">
+        <h2 class="quiz-q" id="q-title"></h2>
+        <p class="quiz-hint" id="q-hint"></p>
+        <div class="quiz-opts" id="q-opts"></div>
+      </div>
+
+      <div class="quiz-foot">
+        <button class="link-back" id="q-back" hidden>&larr; Question précédente</button>
+        <span class="meta" id="q-count"></span>
+      </div>
+
+      <div class="quiz-result" id="q-result" hidden>
+        <div class="result-badge" id="r-ico"></div>
+        <p class="result-sub" id="r-sub"></p>
+        <h3 id="r-nom"></h3>
+        <p class="result-text" id="r-texte"></p>
+        <div class="result-specs">
+          <div><strong id="r-temp"></strong><span>Température</span></div>
+          <div><strong id="r-duree"></strong><span>Infusion</span></div>
+          <div><strong id="r-dose"></strong><span>Dosage</span></div>
+        </div>
+        <div class="result-links"><strong>Pour aller plus loin</strong><ul id="r-liens"></ul></div>
+        <div class="result-actions">
+          <button class="btn btn-ghost" id="q-restart">Refaire le test</button>
+          <a href="{{ "guide-infusion/" | relURL }}" class="btn btn-primary">Voir le guide d'infusion</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap-narrow" style="margin-top:3rem;padding:0">
+      <div class="note note-green">
+        <div class="note-title">{{ partial "icon.html" (dict "n" "leaf" "s" 15) }} Comment ce test est construit</div>
+        <p>Chaque réponse donne des points à six profils de thé. Les critères qui pèsent le plus sont le <strong>moment de la journée</strong>, la <strong>tolérance à la caféine</strong> et le <strong>profil de goût</strong> : ce sont eux qui séparent réellement les familles de thé. Le test ne vend rien et ne recommande aucune marque, il renvoie vers nos articles.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script id="quiz-data" type="application/json">{{ $q | jsonify | safeJS }}</script>
+{{ $icons := slice "sun" "moon" "cup" "flame" "scale" "drop" "sprout" "sparkle" "heart" "leaf" "clock" "compass" "book" "thermo" }}
+<div id="icon-bank" hidden aria-hidden="true">
+  {{ range $icons }}<span data-i="{{ . }}">{{ partial "icon.html" (dict "n" . "s" 34) }}</span>{{ end }}
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('quiz-data').textContent);
+  var Q = D.questions, P = D.profils;
+  var bank = {};
+  document.querySelectorAll('#icon-bank [data-i]').forEach(function(s){ bank[s.dataset.i] = s.innerHTML; });
+
+  var i = 0, answers = [];
+  var elT=document.getElementById('q-title'), elH=document.getElementById('q-hint'),
+      elO=document.getElementById('q-opts'), elS=document.getElementById('q-step'),
+      elB=document.getElementById('q-bar'), elBack=document.getElementById('q-back'),
+      elBody=document.getElementById('q-body'), elRes=document.getElementById('q-result'),
+      elFoot=document.querySelector('.quiz-foot'), elCount=document.getElementById('q-count');
+
+  function ico(n,size){ return bank[n] || bank['cup'] || ''; }
+
+  function render(){
+    var q = Q[i];
+    elT.textContent = q.q;
+    elH.textContent = q.hint || '';
+    elS.textContent = 'Question ' + (i+1) + ' sur ' + Q.length;
+    elB.style.width = ((i)/Q.length*100) + '%';
+    elBack.hidden = (i === 0);
+    elCount.textContent = (Q.length - i) + ' question' + (Q.length - i > 1 ? 's' : '') + ' restante' + (Q.length - i > 1 ? 's' : '');
+    elO.innerHTML = '';
+    q.options.forEach(function(o, k){
+      var b = document.createElement('button');
+      b.className = 'opt';
+      b.type = 'button';
+      b.innerHTML = '<span class="ico">' + ico(o.i) + '</span><span>' + o.l + (o.s ? '<small>' + o.s + '</small>' : '') + '</span>';
+      b.addEventListener('click', function(){ answers[i] = k; next(); });
+      elO.appendChild(b);
+    });
+  }
+
+  function next(){
+    if (i < Q.length - 1) { i++; render(); }
+    else { finish(); }
+  }
+
+  function finish(){
+    var score = {};
+    Object.keys(P).forEach(function(k){ score[k] = 0; });
+    answers.forEach(function(k, qi){
+      var pts = Q[qi].options[k].p || {};
+      Object.keys(pts).forEach(function(p){ score[p] = (score[p] || 0) + pts[p]; });
+    });
+    var win = Object.keys(score).reduce(function(a,b){ return score[b] > score[a] ? b : a; });
+    var r = P[win];
+    document.getElementById('r-ico').innerHTML = ico(r.ico);
+    document.getElementById('r-sub').textContent = r.accroche;
+    document.getElementById('r-nom').textContent = r.nom;
+    document.getElementById('r-texte').textContent = r.texte;
+    document.getElementById('r-temp').textContent = r.temp;
+    document.getElementById('r-duree').textContent = r.duree;
+    document.getElementById('r-dose').textContent = r.dose;
+    document.getElementById('r-liens').innerHTML = (r.liens||[]).map(function(l){
+      return '<li><a href="' + l.u + '">' + l.t + ' &rarr;</a></li>';
+    }).join('');
+    elB.style.width = '100%';
+    elS.textContent = 'Résultat';
+    elBody.hidden = true; elFoot.hidden = true; elRes.hidden = false;
+    elRes.scrollIntoView({block:'nearest', behavior:'smooth'});
+  }
+
+  elBack.addEventListener('click', function(){ if (i > 0) { i--; render(); } });
+  document.getElementById('q-restart').addEventListener('click', function(){
+    i = 0; answers = []; elRes.hidden = true; elBody.hidden = false; elFoot.hidden = false; render();
+  });
+  render();
+})();
+</script>
+{{ end }}

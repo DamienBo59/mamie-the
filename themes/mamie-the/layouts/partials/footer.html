@@ -1,24 +1,28 @@
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <span class="logo-icon">&#9749;</span>
-      <span class="logo-text">Mamie-Thé</span>
-      <p class="footer-tagline">L'art de l'infusion, les secrets de nos grands-mères</p>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">
+        {{ partial "logo.html" . }}
+        <span class="brand-text">{{ .Site.Title }}</span>
+      </div>
+      <p>{{ .Site.Params.description }}</p>
+      <p style="font-size:.85rem">Écrit par <strong style="color:#fff">{{ .Site.Params.authorName | default "Hélène Vasseur" }}</strong>, qui boit du thé en vrac depuis une quinzaine d'années.</p>
     </div>
-    <div class="footer-nav">
-      <h4>Catégories</h4>
+    <div>
+      <h4>Le site</h4>
+      <ul>{{ range .Site.Menus.footer }}<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>{{ end }}</ul>
+    </div>
+    <div>
+      <h4>Explorer</h4>
       <ul>
-        {{ range .Site.Menus.main }}
-        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{ range first 5 .Site.Taxonomies.categories.ByCount }}
+        <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
         {{ end }}
       </ul>
     </div>
-    <div class="footer-info">
-      <h4>À propos</h4>
-      <p>Plongez dans l'univers fascinant du thé. Des rituels du Matcha aux remèdes oubliés, découvrez nos guides et conseils.</p>
-    </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; {{ now.Year }} Mamie-Thé. Tous droits réservés.</p>
+    <span>&copy; {{ now.Year }} {{ .Site.Title }}. Contenus rédigés à la main.</span>
+    <span>Les infusions ne remplacent pas un avis médical.</span>
   </div>
 </footer>
