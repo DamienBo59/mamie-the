@@ -39,6 +39,8 @@
   if (modal) {
     modal.addEventListener('click', function (e) { if (e.target === modal) closeSearch(); });
   }
+  var closeBtn = document.getElementById('close-search');
+  if (closeBtn) closeBtn.addEventListener('click', closeSearch);
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') closeSearch();
     if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); openSearch(); }
@@ -52,9 +54,18 @@
       var q = norm(input.value.trim());
       if (q.length < 2) { out.innerHTML = '<p class="search-empty">Tapez au moins deux lettres.</p>'; return; }
       if (!idx) { out.innerHTML = '<p class="search-empty">Chargement…</p>'; return; }
-      var hits = idx.filter(function (p) {
-        return norm(p.title).indexOf(q) > -1 || norm(p.description).indexOf(q) > -1 || norm(p.tags).indexOf(q) > -1;
-      }).slice(0, 8);
+      var scored = [];
+      idx.forEach(function (p) {
+        var t = norm(p.title), d = norm(p.description), g = norm(p.tags), b = norm(p.body || '');
+        var s = 0;
+        if (t.indexOf(q) > -1) s += 10;
+        if (g.indexOf(q) > -1) s += 5;
+        if (d.indexOf(q) > -1) s += 3;
+        if (b.indexOf(q) > -1) s += 1;
+        if (s) scored.push({p: p, s: s});
+      });
+      scored.sort(function (a, b) { return b.s - a.s; });
+      var hits = scored.slice(0, 8).map(function (x) { return x.p; });
       if (!hits.length) { out.innerHTML = '<p class="search-empty">Aucun résultat pour « ' + input.value + ' ».</p>'; return; }
       out.innerHTML = hits.map(function (p) {
         return '<a href="' + p.url + '"><span class="t">' + p.title + '</span><span class="d">' + (p.description || '') + '</span></a>';

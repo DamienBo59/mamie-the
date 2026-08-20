@@ -29,7 +29,10 @@
 
 <div class="search-modal" id="search-modal" role="dialog" aria-modal="true" aria-label="Recherche">
   <div class="search-panel">
-    <input type="search" id="search-input" placeholder="Chercher un thé, une question, une plante…" autocomplete="off" aria-label="Votre recherche">
+    <div class="search-bar">
+      <input type="search" id="search-input" placeholder="Chercher un thé, une question, une plante…" autocomplete="off" aria-label="Votre recherche">
+      <button type="button" id="close-search" class="search-close" aria-label="Fermer la recherche">&times;</button>
+    </div>
     <div class="search-results" id="search-results">
       <p class="search-empty">Tapez au moins deux lettres.</p>
     </div>

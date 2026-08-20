@@ -84,9 +84,10 @@
     elT.textContent = q.q;
     elH.textContent = q.hint || '';
     elS.textContent = 'Question ' + (i+1) + ' sur ' + Q.length;
-    elB.style.width = ((i)/Q.length*100) + '%';
+    elB.style.width = Math.max(4, i/Q.length*100) + '%';
     elBack.hidden = (i === 0);
-    elCount.textContent = (Q.length - i) + ' question' + (Q.length - i > 1 ? 's' : '') + ' restante' + (Q.length - i > 1 ? 's' : '');
+    var reste = Q.length - i - 1;
+    elCount.textContent = reste === 0 ? 'Dernière question' : reste + ' question' + (reste > 1 ? 's' : '') + ' après celle-ci';
     elO.innerHTML = '';
     q.options.forEach(function(o, k){
       var b = document.createElement('button');

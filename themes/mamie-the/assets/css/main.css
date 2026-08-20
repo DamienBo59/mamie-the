@@ -349,6 +349,13 @@ a.chip:hover{background:var(--green-300);color:var(--green-900)}
 .search-modal{position:fixed;inset:0;z-index:300;background:rgba(30,51,35,.45);backdrop-filter:blur(3px);display:none;padding:8vh 1.25rem}
 .search-modal.open{display:block}
 .search-panel{max-width:640px;margin:0 auto;background:var(--paper);border-radius:var(--r-lg);box-shadow:var(--sh-2);overflow:hidden}
+.search-bar{display:flex;align-items:stretch;background:var(--white);border-bottom:1px solid var(--line)}
+.search-bar input{flex:1;border-bottom:0!important}
+.search-close{
+  border:0;background:none;cursor:pointer;font-size:1.6rem;line-height:1;color:var(--ink-faint);
+  padding:0 1.25rem;font-family:var(--f-ui)
+}
+.search-close:hover{color:var(--terra)}
 .search-panel input{
   width:100%;border:0;border-bottom:1px solid var(--line);padding:1.25rem 1.4rem;font-family:var(--f-body);
   font-size:1.1rem;background:var(--white);color:var(--ink)

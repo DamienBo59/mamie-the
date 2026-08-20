@@ -2,6 +2,8 @@
 [
 {{- range $i, $p := $pages -}}
 {{- if $i }},{{ end }}
-{"title":{{ $p.Title | jsonify }},"url":{{ $p.RelPermalink | jsonify }},"description":{{ ($p.Description | default ($p.Summary | plainify | truncate 140)) | jsonify }},"tags":{{ (delimit (union ($p.Params.tags | default slice) ($p.Params.categories | default slice)) " ") | jsonify }}}
+{{- $faq := "" -}}
+{{- range $p.Params.faq }}{{ $faq = printf "%s %s %s" $faq .q .a }}{{ end -}}
+{"title":{{ $p.Title | jsonify }},"url":{{ $p.RelPermalink | jsonify }},"description":{{ ($p.Description | default ($p.Summary | plainify | truncate 140)) | jsonify }},"tags":{{ (delimit (union ($p.Params.tags | default slice) ($p.Params.categories | default slice)) " ") | jsonify }},"body":{{ (printf "%s %s" ($p.Plain | plainify) $faq) | truncate 1600 | jsonify }}}
 {{- end -}}
 ]
