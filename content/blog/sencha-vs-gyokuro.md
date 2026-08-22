@@ -4,6 +4,9 @@ date: 2026-02-04
 lastmod: 2026-08-20
 description: "Comparatif détaillé entre les deux grands thés verts japonais : le Sencha du quotidien et le prestigieux Gyokuro."
 excerpt: "Sencha cultivé au soleil vs Gyokuro ombré 21 jours : deux thés verts japonais aux profils radicalement différents, du quotidien au prestige."
+image: "/images/blog/sencha-vs-gyokuro.webp"
+imageAlt: "Étal de théières japonaises kyusu en terre cuite dans une boutique de thé au Japon"
+imageCredit: "Photo par Toshiyuki IMAI via Flickr (CC BY-SA 2.0)"
 author: helene-vasseur
 categories: ["Variétés de thé"]
 tags: ["sencha", "gyokuro", "thé vert", "japon"]

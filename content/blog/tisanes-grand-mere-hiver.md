@@ -4,6 +4,9 @@ date: 2026-01-20
 lastmod: 2026-08-20
 description: "Les recettes de tisanes transmises de génération en génération pour affronter le froid et les petits maux de l'hiver."
 excerpt: "Cinq recettes de tisanes intemporelles — thym-miel-citron, camomille, tilleul, verveine et gingembre — pour traverser l'hiver sereinement."
+image: "/images/blog/tisanes-grand-mere-hiver.webp"
+imageAlt: "Tasse de tisane de verveine citronnelle infusée en vrac, posée sur une table en bois"
+imageCredit: "Photo par Josef Schlaghecken via Wikimedia (CC BY-SA 4.0)"
 author: helene-vasseur
 categories: ["Tisanes et plantes"]
 tags: ["tisane", "plantes", "hiver", "thym"]

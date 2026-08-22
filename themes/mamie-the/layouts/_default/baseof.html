@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.tagline }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+{{ $pg := "" }}{{ if in (slice "home" "section" "taxonomy" "term") .Kind }}{{ with .Paginator }}{{ if gt .PageNumber 1 }}{{ $pg = printf " — page %d" .PageNumber }}{{ end }}{{ end }}{{ end }}<title>{{ if and .IsHome (not $pg) }}{{ .Site.Title }} — {{ .Site.Params.tagline }}{{ else }}{{ .Title }}{{ $pg }} | {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ .Description | default .Site.Params.description }}">
 {{ partial "seo-head.html" . }}
 <link rel="preconnect" href="https://fonts.googleapis.com">

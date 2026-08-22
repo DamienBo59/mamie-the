@@ -4,6 +4,9 @@ date: 2026-02-01
 lastmod: 2026-08-20
 description: "Découvrez pourquoi le Matcha est considéré comme un super-aliment et comment l'intégrer dans votre quotidien."
 excerpt: "Super-aliment japonais, le Matcha se consomme en poudre pour absorber 100% des nutriments et profiter d'une énergie calme et durable."
+image: "/images/blog/bienfaits-the-vert-matcha.webp"
+imageAlt: "Bol en porcelaine rempli de feuilles de thé vert et de boutons de jasmin en cours d'infusion"
+imageCredit: "Photo domaine public (CC0 1.0)"
 author: helene-vasseur
 categories: ["Bienfaits et santé"]
 tags: ["thé vert", "matcha", "bienfaits", "antioxydants"]

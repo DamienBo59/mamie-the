@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Les alias de pagination de Hugo sont de simples redirections, sans contenu.
+Disallow: /*/page/1/
+
+Sitemap: {{ "sitemap.xml" | absURL }}
