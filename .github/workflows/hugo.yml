@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main
+  # Rebuild programme : les articles ecrits avec une date future (roadmap.yaml)
+  # sont masques par buildFuture=false jusqu'a leur date. Sans ce cron, ils
+  # n'apparaitraient jamais puisque rien ne redeclenche le build.
+  schedule:
+    - cron: '0 4 * * 2,5'
+  workflow_dispatch:
 
 permissions:
   contents: read

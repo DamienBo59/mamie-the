@@ -79,9 +79,9 @@ articles:
     volume: 14800
     kd: null
     scheduled_date: "2026-08-25"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-08-22"
+    published_url_fr: "https://www.mamie-the.fr/blog/bouilloire-temperature-reglable/"
     published_url_en: null
     error: null
   - kw: "tisane au feuille de framboisier"
@@ -89,9 +89,9 @@ articles:
     volume: 4714
     kd: null
     scheduled_date: "2026-08-28"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-08-22"
+    published_url_fr: "https://www.mamie-the.fr/blog/tisane-feuille-framboisier/"
     published_url_en: null
     error: null
   - kw: "matcha latte tea"
@@ -99,9 +99,9 @@ articles:
     volume: 15083
     kd: null
     scheduled_date: "2026-09-01"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-08-22"
+    published_url_fr: "https://www.mamie-the.fr/blog/matcha-latte/"
     published_url_en: null
     error: null
   - kw: "bienfaits verveine"
@@ -109,9 +109,9 @@ articles:
     volume: 6750
     kd: null
     scheduled_date: "2026-09-04"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-08-22"
+    published_url_fr: "https://www.mamie-the.fr/blog/bienfaits-verveine/"
     published_url_en: null
     error: null
   - kw: "matcha vanille"
@@ -119,9 +119,9 @@ articles:
     volume: 10900
     kd: null
     scheduled_date: "2026-09-08"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-08-22"
+    published_url_fr: "https://www.mamie-the.fr/blog/matcha-vanille/"
     published_url_en: null
     error: null
   - kw: "tasses a the"
