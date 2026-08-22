@@ -4,6 +4,9 @@ date: 2026-01-28
 lastmod: 2026-08-20
 description: "Tour d'horizon des grands thés noirs qui ont fait l'histoire, leurs origines et comment les préparer à la perfection."
 excerpt: "D'Earl Grey au Darjeeling en passant par l'Assam et le Lapsang Souchong, tour d'horizon des grands thés noirs et leurs préparations idéales."
+image: "/images/blog/guide-thes-noirs-classiques.webp"
+imageAlt: "Tasse de thé noir fumante et sa soucoupe en porcelaine, sur fond sombre"
+imageCredit: "Photo par Markus Grossalber via Flickr (CC BY 2.0)"
 author: helene-vasseur
 categories: ["Variétés de thé"]
 tags: ["thé noir", "assam", "darjeeling", "ceylan"]

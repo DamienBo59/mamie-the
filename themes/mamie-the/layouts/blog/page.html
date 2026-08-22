@@ -16,13 +16,20 @@
       <span class="av">{{ with $a }}{{ substr .name 0 1 }}{{ end }}</span>
       <span>
         Par <a href="{{ "a-propos/" | relURL }}">{{ with $a }}{{ .name }}{{ end }}</a><br>
-        <time datetime="{{ .Date.Format "2006-01-02" }}">Publié le {{ .Date.Format "2 January 2006" }}</time>
-        {{ if and .Lastmod (gt (.Lastmod.Sub .Date).Hours 24) }} &middot; mis à jour le {{ .Lastmod.Format "2 January 2006" }}{{ end }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}">Publié le {{ .Date | time.Format ":date_long" }}</time>
+        {{ if and .Lastmod (gt (.Lastmod.Sub .Date).Hours 24) }} &middot; mis à jour le {{ .Lastmod | time.Format ":date_long" }}{{ end }}
         &middot; {{ .ReadingTime }} min de lecture
       </span>
     </div>
   </div>
 </div>
+
+{{ with .Params.image }}
+<figure class="hero-figure">
+  <img src="{{ . | relURL }}" alt="{{ $.Params.imageAlt | default $.Title }}" width="1200" height="630" fetchpriority="high" decoding="async">
+  {{ with $.Params.imageCredit }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>
+{{ end }}
 
 <div class="article-layout">
   <article>

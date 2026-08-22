@@ -14,7 +14,7 @@
       <h2>Les rubriques</h2>
       <ul>{{ range .Site.Taxonomies.categories.ByCount }}<li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>{{ end }}</ul>
       <h2>Tous les articles</h2>
-      <ul>{{ range sort (where .Site.RegularPages "Section" "blog") "Date" "desc" }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="meta">{{ .Date.Format "2 Jan 2006" }}</span></li>{{ end }}</ul>
+      <ul>{{ range sort (where .Site.RegularPages "Section" "blog") "Date" "desc" }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="meta">{{ .Date | time.Format ":date_medium" }}</span></li>{{ end }}</ul>
     </div>
   </div>
 </section>

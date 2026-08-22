@@ -76,7 +76,7 @@
       <div class="card-body" style="padding:2rem">
         <div class="meta">
           {{ with $featured.Params.categories }}<a href="{{ (printf "/categories/%s/" (index . 0 | urlize)) | relURL }}" class="chip">{{ index . 0 }}</a>{{ end }}
-          <time datetime="{{ $featured.Date.Format "2006-01-02" }}">{{ $featured.Date.Format "2 January 2006" }}</time>
+          <time datetime="{{ $featured.Date.Format "2006-01-02" }}">{{ $featured.Date | time.Format ":date_long" }}</time>
           <span>{{ $featured.ReadingTime }} min de lecture</span>
         </div>
         <h3 style="font-size:1.6rem;max-width:30ch"><a href="{{ $featured.RelPermalink }}">{{ $featured.Title }}</a></h3>

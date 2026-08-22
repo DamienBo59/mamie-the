@@ -4,6 +4,9 @@ date: 2026-02-06
 lastmod: 2026-08-20
 description: "Découvrez tous les bienfaits du thé matcha : antioxydants, énergie, concentration. Guide complet pour profiter de ses vertus."
 excerpt: "Le matcha contient 137 fois plus d'antioxydants qu'un thé vert classique et offre une énergie stable grâce au duo caféine-L-théanine."
+image: "/images/blog/the-matcha-bienfaits.webp"
+imageAlt: "Bol de matcha fraîchement battu, mousse verte en surface, sur un tissu rouge"
+imageCredit: "Photo par rumpleteaser via Flickr (CC BY 2.0)"
 author: helene-vasseur
 categories: ["Bienfaits et santé"]
 tags: ["matcha", "bienfaits", "thé vert", "préparation"]

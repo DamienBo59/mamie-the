@@ -4,6 +4,9 @@ date: 2026-01-15
 lastmod: 2026-08-20
 description: "Pourquoi la température de l'eau est le facteur le plus important pour réussir votre thé, et comment la maîtriser."
 excerpt: "Guide des températures idéales pour chaque type de thé, de 60°C pour les verts japonais à 100°C pour les tisanes, avec des astuces sans thermomètre."
+image: "/images/blog/temperature-infusion-parfaite.webp"
+imageAlt: "Théière fleurie et service à thé posés sur une table en bois, dans la lumière chaude d'un salon de thé"
+imageCredit: "Photo par avlxyz via Flickr (CC BY-SA 2.0)"
 author: helene-vasseur
 categories: ["Préparation et matériel"]
 tags: ["température", "temps d'infusion", "préparation", "débutant"]

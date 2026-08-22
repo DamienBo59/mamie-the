@@ -4,6 +4,9 @@ date: 2026-01-10
 lastmod: 2026-08-20
 description: "Retour sur les origines mystérieuses du thé le plus célèbre du monde et les légendes qui l'entourent."
 excerpt: "Des légendes d'un Premier ministre britannique à la bergamote de Calabre, l'histoire fascinante du thé aromatisé le plus célèbre au monde."
+image: "/images/blog/histoire-earl-grey.webp"
+imageAlt: "Bergamotes entières et coupées en deux dans une assiette, le fruit qui parfume l'Earl Grey"
+imageCredit: "Photo par Leslie Seaton via Wikimedia (CC BY 2.0)"
 author: helene-vasseur
 categories: ["Culture et rituels"]
 tags: ["earl grey", "bergamote", "histoire", "thé noir"]

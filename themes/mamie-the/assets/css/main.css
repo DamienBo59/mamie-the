@@ -214,6 +214,18 @@ a.chip:hover{background:var(--green-300);color:var(--green-900)}
 .tool h3{margin:0 0 .25rem;font-size:1.05rem}
 .tool p{margin:0;font-size:.9rem;color:var(--ink-soft)}
 
+/* ---------- Banniere d'article ---------- */
+.hero-figure{max-width:var(--wrap);margin:0 auto;padding:2rem 1.25rem 0}
+.hero-figure img{
+  width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:var(--r-lg);
+  box-shadow:var(--sh-2);background:var(--paper-3)
+}
+.hero-figure figcaption{
+  font-family:var(--f-ui);font-size:.74rem;color:var(--ink-faint);
+  text-align:right;margin-top:.5rem;font-style:normal
+}
+@media (max-width:700px){.hero-figure img{aspect-ratio:16/10;border-radius:var(--r)}}
+
 /* ---------- Article ---------- */
 .article-head{background:linear-gradient(180deg,var(--paper-2),var(--paper));border-bottom:1px solid var(--line);padding:2.5rem 0 2rem}
 .breadcrumb{font-family:var(--f-ui);font-size:.78rem;color:var(--ink-faint);margin-bottom:1rem}
