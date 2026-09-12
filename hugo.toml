@@ -11,7 +11,7 @@ buildFuture = false
 
 [params]
   description = "Le média du thé en vrac : bienfaits, préparation, variétés et tisanes. Des guides précis, testés et écrits par une passionnée."
-  tagline = "L'art de l'infusion, les secrets de nos grands-mères"
+  tagline = "Thé en vrac, tisanes et rituels d'infusion"
   author = "helene-vasseur"
   logoText = "Mamie-Thé"
   siteStarted = 2026
