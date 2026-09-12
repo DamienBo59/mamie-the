@@ -14,7 +14,12 @@
 # jadore-le-the, le-the.fr, teaheritage, origeens), puis filtrees sur la pertinence
 # thematique, l'intention informationnelle et le volume, et dedupliquees.
 # Methode complete : Drive perso,
-#   100 Areas/seo_freelance/Site web/parc-pbn/pbn - fiche clusters et mots-cles 2026-08.md
+#   100 Areas/seo_freelance/Site web/parc-pbn/mamie-the.fr/
+#     mamie-the - clusters et mots-cles 2026-08.md
+#   (fiche detachee par site le 2026-09-12 ; nom exact sur le disque avec
+#    accents : 'mamie-the - clusters et mots-clés 2026-08.md')
+#   La comparaison avec les 2 autres niches du parc est restee a la racine,
+#   dans 'parc - synthese comparative des 3 niches 2026-08.md'.
 #
 # CE QUE DISENT CES DONNEES
 # -------------------------
@@ -129,9 +134,9 @@ articles:
     volume: 7364
     kd: null
     scheduled_date: "2026-09-11"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-09-12"
+    published_url_fr: "https://www.mamie-the.fr/blog/tasses-a-the/"
     published_url_en: null
     error: null
   - kw: "the ala menthe"
@@ -139,16 +144,16 @@ articles:
     volume: 4500
     kd: null
     scheduled_date: "2026-09-15"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-09-12"
+    published_url_fr: "https://www.mamie-the.fr/blog/the-a-la-menthe/"
     published_url_en: null
     error: null
   - kw: "the marocain"
     category: "Culture et rituels"
     volume: 4909
     kd: null
-    scheduled_date: "2026-09-18"
+    scheduled_date: "2026-10-06"
     status: todo
     published_date: null
     published_url_fr: null
@@ -159,9 +164,9 @@ articles:
     volume: 6000
     kd: null
     scheduled_date: "2026-09-22"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-09-12"
+    published_url_fr: "https://www.mamie-the.fr/blog/bienfaits-camomille/"
     published_url_en: null
     error: null
   - kw: "kit matcha"
@@ -169,9 +174,9 @@ articles:
     volume: 9600
     kd: null
     scheduled_date: "2026-09-25"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-09-12"
+    published_url_fr: "https://www.mamie-the.fr/blog/kit-matcha/"
     published_url_en: null
     error: null
   - kw: "boite a the"
@@ -199,9 +204,9 @@ articles:
     volume: 4500
     kd: null
     scheduled_date: "2026-10-06"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-09-12"
+    published_url_fr: "https://www.mamie-the.fr/blog/the-glace/"
     published_url_en: null
     error: null
   - kw: "bienfaits du rooibos"
