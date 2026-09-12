@@ -1,7 +1,7 @@
 ---
-title: "Bouilloire à température réglable : est-ce vraiment utile ?"
+title: "Bouilloire à température réglable : utile ?"
 date: 2026-08-22
-lastmod: 2026-08-22
+lastmod: 2026-09-12
 description: "Faut-il investir dans une bouilloire à température réglable pour son thé ? Ce qu'elle change réellement, pour qui elle est indispensable, et comment s'en passer."
 excerpt: "La bouilloire réglable est l'achat qui change le plus le quotidien si vous buvez du thé vert, et une dépense inutile sinon. Voici comment trancher."
 image: "/images/blog/bouilloire-temperature-reglable.webp"

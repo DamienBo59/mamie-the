@@ -1,5 +1,5 @@
 ---
-title: "Thé à la menthe : la recette marocaine et l'infusion de menthe"
+title: "Thé à la menthe : la recette marocaine"
 date: 2026-09-12
 lastmod: 2026-09-12
 description: "Le thé à la menthe marocain n'est pas une tisane : il contient du thé vert et de la théine. La recette, les proportions, et la vraie infusion de menthe."

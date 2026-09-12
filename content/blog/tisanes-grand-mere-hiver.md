@@ -1,7 +1,7 @@
 ---
-title: "5 tisanes de grand-mère pour passer l'hiver en douceur"
+title: "5 tisanes de grand-mère pour l'hiver"
 date: 2026-01-20
-lastmod: 2026-08-20
+lastmod: 2026-09-12
 description: "Les recettes de tisanes transmises de génération en génération pour affronter le froid et les petits maux de l'hiver."
 excerpt: "Cinq recettes de tisanes intemporelles — thym-miel-citron, camomille, tilleul, verveine et gingembre — pour traverser l'hiver sereinement."
 image: "/images/blog/tisanes-grand-mere-hiver.webp"

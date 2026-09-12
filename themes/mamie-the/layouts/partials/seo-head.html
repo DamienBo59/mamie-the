@@ -8,7 +8,7 @@
 {{- $pid := printf "%s#/schema/person/%s" $base $aid -}}
 
 <link rel="canonical" href="{{ .Permalink }}">
-<meta name="robots" content="{{ if .Params.noindex }}noindex,nofollow{{ else }}index,follow,max-image-preview:large,max-snippet:-1{{ end }}">
+<meta name="robots" content="{{ if .Params.noindex }}noindex, follow{{ else }}index,follow,max-image-preview:large,max-snippet:-1{{ end }}">
 {{ with $a }}<meta name="author" content="{{ .name }}">{{ end }}
 
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">

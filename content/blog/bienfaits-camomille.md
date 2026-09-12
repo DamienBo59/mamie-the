@@ -1,5 +1,5 @@
 ---
-title: "Les bienfaits de la camomille : ce qui est établi et ce qui ne l'est pas"
+title: "Bienfaits de la camomille : ce qui est établi"
 date: 2026-09-12
 lastmod: 2026-09-12
 description: "Camomille matricaire ou camomille romaine, ce ne sont pas les mêmes fleurs. Ce qu'on peut raisonnablement en attendre, et la vigilance à avoir sur les allergies."

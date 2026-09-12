@@ -1,5 +1,5 @@
 ---
-title: "Tasses à thé : quelle matière, quelle forme, quelle contenance"
+title: "Tasses à thé : matière, forme, contenance"
 date: 2026-09-12
 lastmod: 2026-09-12
 description: "Porcelaine, fonte, grès ou verre : ce que la tasse change vraiment au goût du thé, et les contenances qui correspondent à chaque famille."

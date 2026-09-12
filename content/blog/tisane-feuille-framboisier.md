@@ -1,7 +1,7 @@
 ---
-title: "La tisane de feuille de framboisier : ce qu'on en dit, ce qu'on en sait"
+title: "Tisane de feuille de framboisier : ce qu'on sait"
 date: 2026-08-22
-lastmod: 2026-08-22
+lastmod: 2026-09-12
 description: "La feuille de framboisier s'infuse depuis des siècles et traîne beaucoup de promesses. Voici son goût, sa préparation, et où s'arrête honnêtement ce qu'on peut en dire."
 excerpt: "Une tisane de tradition, au goût plus proche du thé noir que du fruit, et entourée d'affirmations qu'il faut savoir trier. Notamment autour de la grossesse."
 image: "/images/blog/tisane-feuille-framboisier.webp"

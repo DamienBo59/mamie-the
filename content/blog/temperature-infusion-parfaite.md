@@ -1,7 +1,7 @@
 ---
-title: "La température parfaite : le secret d'une infusion réussie"
+title: "La température parfaite pour infuser le thé"
 date: 2026-01-15
-lastmod: 2026-08-20
+lastmod: 2026-09-12
 description: "Pourquoi la température de l'eau est le facteur le plus important pour réussir votre thé, et comment la maîtriser."
 excerpt: "Guide des températures idéales pour chaque type de thé, de 60°C pour les verts japonais à 100°C pour les tisanes, avec des astuces sans thermomètre."
 image: "/images/blog/temperature-infusion-parfaite.webp"

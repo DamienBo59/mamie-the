@@ -1,5 +1,5 @@
 ---
-title: "Thé glacé maison : les deux méthodes et pourquoi il devient trouble"
+title: "Thé glacé maison : les deux méthodes"
 date: 2026-09-12
 lastmod: 2026-09-12
 description: "Thé glacé à chaud ou à froid : les proportions, les temps, et l'explication du trouble laiteux qui apparaît quand un thé noir refroidit trop vite."

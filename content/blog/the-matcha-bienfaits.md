@@ -1,7 +1,7 @@
 ---
-title: "Thé matcha bienfaits : pourquoi cette poudre verte est un allié santé incontournable"
+title: "Thé matcha : les bienfaits, ce qui est établi"
 date: 2026-02-06
-lastmod: 2026-08-20
+lastmod: 2026-09-12
 description: "Découvrez tous les bienfaits du thé matcha : antioxydants, énergie, concentration. Guide complet pour profiter de ses vertus."
 excerpt: "Le matcha contient 137 fois plus d'antioxydants qu'un thé vert classique et offre une énergie stable grâce au duo caféine-L-théanine."
 image: "/images/blog/the-matcha-bienfaits.webp"

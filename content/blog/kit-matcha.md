@@ -1,5 +1,5 @@
 ---
-title: "Kit matcha : ce qui sert vraiment et ce qui est du décor"
+title: "Kit matcha : ce qui sert vraiment"
 date: 2026-09-12
 lastmod: 2026-09-12
 description: "Bol, fouet, cuillère, tamis : ce que contient un kit matcha, ce qui est réellement indispensable, et la différence entre grade cérémonial et culinaire."

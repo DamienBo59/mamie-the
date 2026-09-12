@@ -1,7 +1,7 @@
 ---
-title: "Matcha latte : la recette, et les trois erreurs qui le rendent amer"
+title: "Matcha latte : la recette et les 3 erreurs"
 date: 2026-08-22
-lastmod: 2026-08-22
+lastmod: 2026-09-12
 description: "Comment réussir un matcha latte à la maison : les proportions, la température, le choix de la poudre, et les trois erreurs qui expliquent presque tous les ratages."
 excerpt: "Un bon matcha latte tient à trois choses : une eau à 75 °C, un matcha tamisé, et un lait qui ne couvre pas le thé. Le reste est du détail."
 image: "/images/blog/matcha-latte.webp"

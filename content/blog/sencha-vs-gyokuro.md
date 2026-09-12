@@ -1,7 +1,7 @@
 ---
-title: "Sencha vs Gyokuro : quel thé vert japonais choisir ?"
+title: "Sencha vs Gyokuro : lequel choisir ?"
 date: 2026-02-04
-lastmod: 2026-08-20
+lastmod: 2026-09-12
 description: "Comparatif détaillé entre les deux grands thés verts japonais : le Sencha du quotidien et le prestigieux Gyokuro."
 excerpt: "Sencha cultivé au soleil vs Gyokuro ombré 21 jours : deux thés verts japonais aux profils radicalement différents, du quotidien au prestige."
 image: "/images/blog/sencha-vs-gyokuro.webp"

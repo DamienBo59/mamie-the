@@ -1,7 +1,7 @@
 ---
-title: "Les bienfaits de la verveine : ce qui est établi et ce qui ne l'est pas"
+title: "Bienfaits de la verveine : ce qui est établi"
 date: 2026-08-22
-lastmod: 2026-08-22
+lastmod: 2026-09-12
 description: "Verveine citronnelle ou verveine officinale, ce ne sont pas les mêmes plantes. Ce qu'on peut raisonnablement en attendre, et ce qui relève de la tradition."
 excerpt: "Deux plantes portent le nom de verveine et on les confond en permanence. Voici comment les distinguer, et où s'arrête ce qu'on peut honnêtement en dire."
 image: "/images/blog/bienfaits-verveine.webp"
