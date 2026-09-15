@@ -154,9 +154,9 @@ articles:
     volume: 4909
     kd: null
     scheduled_date: "2026-10-06"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-09-16"
+    published_url_fr: "https://www.mamie-the.fr/blog/the-marocain/"
     published_url_en: null
     error: null
   - kw: "bienfaits camomille"
@@ -184,9 +184,9 @@ articles:
     volume: 6750
     kd: null
     scheduled_date: "2026-09-29"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-09-16"
+    published_url_fr: "https://www.mamie-the.fr/blog/boite-a-the/"
     published_url_en: null
     error: null
   - kw: "yerba mate"
@@ -194,9 +194,9 @@ articles:
     volume: 4500
     kd: null
     scheduled_date: "2026-10-02"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-09-16"
+    published_url_fr: "https://www.mamie-the.fr/blog/yerba-mate/"
     published_url_en: null
     error: null
   - kw: "the glace"
@@ -214,9 +214,9 @@ articles:
     volume: 5500
     kd: null
     scheduled_date: "2026-10-09"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-09-16"
+    published_url_fr: "https://www.mamie-the.fr/blog/bienfaits-rooibos/"
     published_url_en: null
     error: null
   - kw: "the blanc"
@@ -224,9 +224,9 @@ articles:
     volume: 8250
     kd: null
     scheduled_date: "2026-10-13"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-09-16"
+    published_url_fr: "https://www.mamie-the.fr/blog/the-blanc/"
     published_url_en: null
     error: null
   - kw: "infuseur à thé"
