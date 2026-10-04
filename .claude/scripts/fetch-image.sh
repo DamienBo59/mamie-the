@@ -274,7 +274,7 @@ if not cands:
     sys.exit(3)
 cands.sort(key=lambda c: c[0], reverse=True)
 _s, r, u = cands[0]
-# 'raw' est la source non bornee : on lui impose la largeur cible cote CDN Unsplash
+# 'raw' est la source non bornee : on lui impose la largeur voulue cote CDN Unsplash
 if 'images.unsplash.com' in u:
     u += ('&' if '?' in u else '?') + 'w=1600&q=82&fm=jpg&fit=max'
 print(f\"[fetch-image] Unsplash retenu {r.get('width')}x{r.get('height')} sur {len(cands)} candidats\", file=sys.stderr)

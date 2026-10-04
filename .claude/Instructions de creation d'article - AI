@@ -169,7 +169,7 @@ Apres le quick summary et le temps de lecture, inserer un sommaire avec liens an
 ## Liens internes
 
 - **Obligatoire** : inclure des liens vers d'autres articles du blog, en priorite ceux de la meme categorie ou avec des tags communs.
-- Les ancres de liens doivent etre **naturelles** et contenir les **mots-cles des articles cibles**.
+- Les ancres de liens doivent etre **naturelles** et contenir les **mots-cles des articles vises**.
 - Format : `[ancre avec mots-cles](/blog/{slug}/)`
 - Avant d'ecrire, lister les articles existants dans `src/content/blog/` pour identifier les liens possibles.
 
