@@ -314,9 +314,9 @@ articles:
     volume: 4800
     kd: null
     scheduled_date: "2026-11-13"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-11-13"
+    published_url_fr: "https://www.mamie-the.fr/blog/tisane-de-thym-danger/"
     published_url_en: null
     error: null
   - kw: "the de marque"
@@ -334,9 +334,9 @@ articles:
     volume: 4000
     kd: null
     scheduled_date: "2026-11-20"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-11-20"
+    published_url_fr: "https://www.mamie-the.fr/blog/theiere-en-fonte/"
     published_url_en: null
     error: null
   - kw: "maté calebasse"
