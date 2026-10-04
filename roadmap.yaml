@@ -344,11 +344,14 @@ articles:
     volume: 3600
     kd: null
     scheduled_date: "2026-11-24"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-11-24"
+    published_url_fr: "https://www.mamie-the.fr/blog/mate-calebasse/"
     published_url_en: null
     error: null
+  # SAUTEE le 2026-10-04, cannibalisation : la SERP de `matcha ceremonie` est celle du grade
+  # (fiches produit « matcha de ceremonie »), deja traite par /blog/kit-matcha/ (sa description
+  # l'annonce), /blog/matcha-latte/ et /blog/the-matcha-bienfaits/. En attente d'arbitrage.
   - kw: "matcha ceremonie"
     category: "Culture et rituels"
     volume: 1900
@@ -364,11 +367,14 @@ articles:
     volume: 3000
     kd: null
     scheduled_date: "2026-12-01"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-12-01"
+    published_url_fr: "https://www.mamie-the.fr/blog/the-minceur/"
     published_url_en: null
     error: null
+  # SAUTEE le 2026-10-04 : `l'autre the` est la maison de the parisienne L'Autre The (marque,
+  # boutiques, salon de the). Intention navigationnelle, que seul son site satisfait, et marque
+  # normalement exclue par la methode de la roadmap. En attente d'arbitrage (suppression conseillee).
   - kw: "l'autre the"
     category: "Variétés de thé"
     volume: 2071
@@ -384,11 +390,14 @@ articles:
     volume: 3385
     kd: null
     scheduled_date: "2026-12-08"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-12-08"
+    published_url_fr: "https://www.mamie-the.fr/blog/cuillere-a-the/"
     published_url_en: null
     error: null
+  # SAUTEE le 2026-10-04, cannibalisation : /blog/bienfaits-camomille/ traite deja la tisane
+  # (les deux camomilles, preparation, achat, precautions). Meme cas pour `tisane camomille
+  # bienfaits` (2027-01-05). En attente d'arbitrage.
   - kw: "tisane camomille"
     category: "Tisanes et plantes"
     volume: 3200
@@ -404,9 +413,9 @@ articles:
     volume: 1807
     kd: null
     scheduled_date: "2026-12-15"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-12-15"
+    published_url_fr: "https://www.mamie-the.fr/blog/chai-the-latte/"
     published_url_en: null
     error: null
   - kw: "tisane de romarin danger"
@@ -414,9 +423,9 @@ articles:
     volume: 2900
     kd: null
     scheduled_date: "2026-12-18"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-12-18"
+    published_url_fr: "https://www.mamie-the.fr/blog/tisane-de-romarin-danger/"
     published_url_en: null
     error: null
   - kw: "box à thé"
