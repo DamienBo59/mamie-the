@@ -17,10 +17,10 @@ L'utilisateur fournit :
 
 | Champ | Obligatoire | Exemple |
 |-------|-------------|---------|
-| Mot-cle principal | oui | `geo generative engine optimization` |
-| Categorie | oui | `GEO` |
-| Auteur | oui (donne en amont, reutiliser le dernier connu) | `datashake` |
-| Marque a mettre en avant | non (articles commerciaux uniquement) | `datashake` |
+| Mot-cle principal | oui | `temperature the vert` |
+| Categorie | oui | `Thé vert` |
+| Auteur | oui (donne en amont, reutiliser le dernier connu) | `helene-vasseur` |
+| Marque a mettre en avant | non (articles commerciaux uniquement) | `Nom de la marque` |
 | Informations complementaires | non | contexte, angle, sources |
 
 ---
@@ -55,7 +55,7 @@ draft: false
 
 Le slug du fichier = le mot-cle principal en minuscules, sans accents, mots separes par des tirets.
 
-Exemple : `geo generative engine optimization` → `geo-generative-engine-optimization.md`
+Exemple : `temperature the vert` → `temperature-the-vert.md`
 
 ---
 
@@ -69,7 +69,7 @@ Exemple : `geo generative engine optimization` → `geo-generative-engine-optimi
 
 Afficher en haut de l'article, juste apres le quick summary. Calculer : nombre de mots / 200 = minutes (arrondir).
 
-### Quick Summary (bloc GEO)
+### Quick Summary (bloc de synthese)
 
 Juste apres le H1 (qui est genere automatiquement par le layout), placer un bloc resume sous forme de **liste a puces ou tableau** dans un blockquote. Cela facilite l'extraction par les IA generatives.
 
@@ -94,7 +94,7 @@ Option 2 — Tableau :
 > | Cle 3 | Valeur |
 ```
 
-Ce bloc est essentiel pour le GEO : les IA citent souvent le premier paragraphe/resume. Le format liste ou tableau est prefere car il est plus facilement extractible par les modeles de langage.
+Ce bloc est essentiel pour les moteurs de reponse IA : ils citent souvent le premier paragraphe/resume. Le format liste ou tableau est prefere car il est plus facilement extractible par les modeles de langage.
 
 ### Temps de lecture
 
@@ -141,7 +141,7 @@ Apres le quick summary et le temps de lecture, inserer un sommaire avec liens an
 ### Listes a puces
 
 - **2 a 3 listes a puces** dans l'article.
-- Les listes favorisent le GEO (les IA extraient facilement les listes).
+- Les listes sont faciles a extraire pour les moteurs de reponse IA.
 
 ### Tableaux
 
@@ -175,10 +175,10 @@ Apres le quick summary et le temps de lecture, inserer un sommaire avec liens an
 
 ### Exemple
 
-Si l'article parle de GEO et qu'il existe un article `qu-est-ce-que-le-geo.md`, ecrire :
+Si l'article parle de the noir et qu'il existe un article `bienfaits-the-noir.md`, ecrire :
 
 ```markdown
-Pour bien comprendre les fondamentaux, il est utile de consulter notre guide sur [ce qu'est le GEO](/blog/qu-est-ce-que-le-geo/).
+Pour aller plus loin, il est utile de consulter le guide sur [les bienfaits du the noir](/blog/bienfaits-the-noir/).
 ```
 
 ---

@@ -1,9 +1,7 @@
-# Auteur unique du blog. C'est le persona P01 du parc.
-# Source de verite : 100 Areas/seo_freelance/Reddit/parc-reddit/personas/the/persona-P01-bibliothecaire-the.md
+# Auteur unique du blog. Son id est la valeur du champ `author` des articles.
 helene-vasseur:
   id: helene-vasseur
   name: Hélène Vasseur
-  persona: P01
   jobTitle:
     fr: Amatrice de thé et rédactrice
     en: Tea enthusiast and writer
