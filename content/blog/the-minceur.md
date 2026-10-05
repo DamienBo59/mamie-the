@@ -1,8 +1,8 @@
 ---
 title: "Thé minceur : ce que contiennent ces mélanges"
-date: 2026-12-01
-publishDate: 2026-12-01
-lastmod: 2026-12-01
+date: 2026-10-30
+publishDate: 2026-10-30
+lastmod: 2026-10-30
 description: "Aucun thé ne fait maigrir. Ce que contiennent les thés minceur, pourquoi la balance bouge parfois, et les plantes qui demandent de la prudence."
 excerpt: "J'ai lu les étiquettes d'une dizaine de thés minceur. Ce qui fait bouger la balance n'a rien à voir avec la graisse, et une partie de ces plantes n'a rien d'anodin."
 image: "/images/blog/the-minceur.webp"

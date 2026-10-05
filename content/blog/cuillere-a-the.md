@@ -1,8 +1,8 @@
 ---
 title: "Cuillère à thé : combien de grammes, vraiment"
-date: 2026-12-08
-publishDate: 2026-12-08
-lastmod: 2026-12-08
+date: 2026-11-03
+publishDate: 2026-11-03
+lastmod: 2026-11-03
 description: "Une cuillère à thé, c'est 5 ml, mais de 1 à 4 g de feuilles selon le thé. Les équivalences par famille, et pourquoi le dosage au poids change tout."
 excerpt: "Pendant des années j'ai dosé « une cuillère par tasse », quel que soit le thé. C'est la raison pour laquelle mes thés blancs étaient fades et mes oolongs amers."
 image: "/images/blog/cuillere-a-the.webp"

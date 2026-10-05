@@ -1,7 +1,7 @@
 ---
 title: "Bienfaits du thé noir : ce qui est établi"
-date: 2026-10-27
-lastmod: 2026-10-27
+date: 2026-10-09
+lastmod: 2026-10-09
 description: "Caféine, théaflavines, tanins et fer : ce que contient réellement une tasse de thé noir, ce qui est documenté, et ce qui relève de l'affirmation commerciale."
 excerpt: "Le thé noir est le plus bu au monde et le plus mal décrit. Voici ce que contient vraiment la tasse, et où s'arrête ce que l'on sait."
 image: "/images/blog/bienfaits-the-noir.webp"

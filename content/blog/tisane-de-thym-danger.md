@@ -1,8 +1,8 @@
 ---
 title: "Tisane de thym : les points de vigilance"
-date: 2026-11-13
-publishDate: 2026-11-13
-lastmod: 2026-11-13
+date: 2026-10-16
+publishDate: 2026-10-16
+lastmod: 2026-10-16
 description: "Ce qui est réellement signalé sur la tisane de thym, la confusion avec l'huile essentielle, et les cas où la question relève d'un pharmacien."
 excerpt: "La plupart des mises en garde qu'on lit sur le thym ne concernent pas la tisane, mais l'huile essentielle. Ce sont deux produits qui n'ont rien à voir."
 image: "/images/blog/tisane-de-thym-danger.webp"

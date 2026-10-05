@@ -1,7 +1,7 @@
 ---
 title: "Théière en verre : ce qu'elle apporte"
-date: 2026-11-03
-lastmod: 2026-11-03
+date: 2026-10-13
+lastmod: 2026-10-13
 description: "Le verre ne retient aucun goût et laisse voir l'infusion, mais il ne garde pas la chaleur. Borosilicate, filtre intégré, entretien : comment la choisir."
 excerpt: "C'est la théière que j'utilise pour goûter un thé nouveau, et celle que je laisse au placard pour un dimanche d'hiver. Voici pourquoi."
 image: "/images/blog/theiere-verre.webp"

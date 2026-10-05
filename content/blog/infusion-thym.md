@@ -1,7 +1,7 @@
 ---
 title: "Infusion de thym : comment je la prépare"
-date: 2026-10-20
-lastmod: 2026-10-20
+date: 2026-10-06
+lastmod: 2026-10-06
 description: "Dosage, température, durée et couvercle : la préparation d'une infusion de thym, ce qui la rend camphrée, et ce qu'on peut honnêtement en dire."
 excerpt: "Le thym est la plante que j'ai le plus souvent ratée, parce que je la traitais comme un thé. Elle demande l'inverse de ce que demande une feuille de thé."
 image: "/images/blog/infusion-thym.webp"

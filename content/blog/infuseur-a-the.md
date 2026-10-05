@@ -1,7 +1,7 @@
 ---
 title: "Infuseur à thé : la place avant la forme"
-date: 2026-10-16
-lastmod: 2026-10-16
+date: 2026-10-05
+lastmod: 2026-10-05
 description: "Boule, panier, filtre papier ou sachet à remplir : le seul critère qui compte pour un infuseur est la place laissée aux feuilles pour se déployer."
 excerpt: "J'ai longtemps utilisé une boule à thé en croyant bien faire. C'est l'objet qui m'a fait croire pendant des années que mon thé en vrac ne valait pas mieux que du sachet."
 image: "/images/blog/infuseur-a-the.webp"

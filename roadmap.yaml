@@ -1,7 +1,7 @@
 # Roadmap editoriale evergreen de mamie-the.fr
 #
 # 52 entrees au 2026-10-04 (27 publiees ou programmees, 25 a ecrire jusqu'au
-# 2027-02-19), mardi et vendredi. Plus bas, deux listes hors publication :
+# 2027-02-05), mardi et vendredi. Plus bas, deux listes hors publication :
 # `absorbed` (requetes couvertes par un article existant) et `dropped` (marques).
 #
 # Alimente /create-article-auto (publication automatique) et /create-article-seo
@@ -180,6 +180,16 @@ articles:
     published_url_fr: "https://www.mamie-the.fr/blog/yerba-mate/"
     published_url_en: null
     error: null
+  - kw: "infuseur à thé"
+    category: "Préparation et matériel"
+    volume: 4909
+    kd: null
+    scheduled_date: "2026-10-05"
+    status: done
+    published_date: "2026-10-05"
+    published_url_fr: "https://www.mamie-the.fr/blog/infuseur-a-the/"
+    published_url_en: null
+    error: null
   - kw: "the marocain"
     category: "Culture et rituels"
     volume: 4909
@@ -200,6 +210,16 @@ articles:
     published_url_fr: "https://www.mamie-the.fr/blog/the-glace/"
     published_url_en: null
     error: null
+  - kw: "infusion thym"
+    category: "Tisanes et plantes"
+    volume: 4400
+    kd: null
+    scheduled_date: "2026-10-06"
+    status: done
+    published_date: "2026-10-06"
+    published_url_fr: "https://www.mamie-the.fr/blog/infusion-thym/"
+    published_url_en: null
+    error: null
   - kw: "bienfaits du rooibos"
     category: "Bienfaits et santé"
     volume: 5500
@@ -208,6 +228,16 @@ articles:
     status: done
     published_date: "2026-09-16"
     published_url_fr: "https://www.mamie-the.fr/blog/bienfaits-rooibos/"
+    published_url_en: null
+    error: null
+  - kw: "bienfaits the noir"
+    category: "Bienfaits et santé"
+    volume: 5500
+    kd: null
+    scheduled_date: "2026-10-09"
+    status: done
+    published_date: "2026-10-09"
+    published_url_fr: "https://www.mamie-the.fr/blog/bienfaits-the-noir/"
     published_url_en: null
     error: null
   - kw: "the blanc"
@@ -220,24 +250,94 @@ articles:
     published_url_fr: "https://www.mamie-the.fr/blog/the-blanc/"
     published_url_en: null
     error: null
-  - kw: "infuseur à thé"
+  - kw: "theiere verre"
     category: "Préparation et matériel"
-    volume: 4909
+    volume: 4714
+    kd: null
+    scheduled_date: "2026-10-13"
+    status: done
+    published_date: "2026-10-13"
+    published_url_fr: "https://www.mamie-the.fr/blog/theiere-verre/"
+    published_url_en: null
+    error: null
+  - kw: "tisane de thym danger"
+    category: "Bienfaits et santé"
+    volume: 4800
     kd: null
     scheduled_date: "2026-10-16"
     status: done
     published_date: "2026-10-16"
-    published_url_fr: "https://www.mamie-the.fr/blog/infuseur-a-the/"
+    published_url_fr: "https://www.mamie-the.fr/blog/tisane-de-thym-danger/"
     published_url_en: null
     error: null
-  - kw: "infusion thym"
-    category: "Tisanes et plantes"
-    volume: 4400
+  - kw: "the de marque"
+    category: "Variétés de thé"
+    volume: 2571
     kd: null
     scheduled_date: "2026-10-20"
     status: done
     published_date: "2026-10-20"
-    published_url_fr: "https://www.mamie-the.fr/blog/infusion-thym/"
+    published_url_fr: "https://www.mamie-the.fr/blog/the-de-marque/"
+    published_url_en: null
+    error: null
+  - kw: "theiere en fonte"
+    category: "Préparation et matériel"
+    volume: 4000
+    kd: null
+    scheduled_date: "2026-10-23"
+    status: done
+    published_date: "2026-10-23"
+    published_url_fr: "https://www.mamie-the.fr/blog/theiere-en-fonte/"
+    published_url_en: null
+    error: null
+  - kw: "maté calebasse"
+    category: "Tisanes et plantes"
+    volume: 3600
+    kd: null
+    scheduled_date: "2026-10-27"
+    status: done
+    published_date: "2026-10-27"
+    published_url_fr: "https://www.mamie-the.fr/blog/mate-calebasse/"
+    published_url_en: null
+    error: null
+  - kw: "the minceur"
+    category: "Bienfaits et santé"
+    volume: 3000
+    kd: null
+    scheduled_date: "2026-10-30"
+    status: done
+    published_date: "2026-10-30"
+    published_url_fr: "https://www.mamie-the.fr/blog/the-minceur/"
+    published_url_en: null
+    error: null
+  - kw: "cuillere a the"
+    category: "Préparation et matériel"
+    volume: 3385
+    kd: null
+    scheduled_date: "2026-11-03"
+    status: done
+    published_date: "2026-11-03"
+    published_url_fr: "https://www.mamie-the.fr/blog/cuillere-a-the/"
+    published_url_en: null
+    error: null
+  - kw: "chai the latte"
+    category: "Culture et rituels"
+    volume: 1807
+    kd: null
+    scheduled_date: "2026-11-06"
+    status: done
+    published_date: "2026-11-06"
+    published_url_fr: "https://www.mamie-the.fr/blog/chai-the-latte/"
+    published_url_en: null
+    error: null
+  - kw: "tisane de romarin danger"
+    category: "Bienfaits et santé"
+    volume: 2900
+    kd: null
+    scheduled_date: "2026-11-10"
+    status: done
+    published_date: "2026-11-10"
+    published_url_fr: "https://www.mamie-the.fr/blog/tisane-de-romarin-danger/"
     published_url_en: null
     error: null
   - kw: "fouet matcha"
@@ -245,41 +345,10 @@ articles:
     category: "Variétés de thé"
     volume: 6000
     kd: null
-    scheduled_date: "2026-10-23"
+    scheduled_date: "2026-11-13"
     status: todo
     published_date: null
     published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "bienfaits the noir"
-    category: "Bienfaits et santé"
-    volume: 5500
-    kd: null
-    scheduled_date: "2026-10-27"
-    status: done
-    published_date: "2026-10-27"
-    published_url_fr: "https://www.mamie-the.fr/blog/bienfaits-the-noir/"
-    published_url_en: null
-    error: null
-  - kw: "box à thé"
-    angle: "coffrets et abonnements (box), pas la boite de conservation, deja traitee par /blog/boite-a-the/."
-    category: "Variétés de thé"
-    volume: 2000
-    kd: null
-    scheduled_date: "2026-10-30"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "theiere verre"
-    category: "Préparation et matériel"
-    volume: 4714
-    kd: null
-    scheduled_date: "2026-11-03"
-    status: done
-    published_date: "2026-11-03"
-    published_url_fr: "https://www.mamie-the.fr/blog/theiere-verre/"
     published_url_en: null
     error: null
   - kw: "tisane de sauge"
@@ -287,7 +356,18 @@ articles:
     category: "Tisanes et plantes"
     volume: 3500
     kd: null
-    scheduled_date: "2026-11-06"
+    scheduled_date: "2026-11-17"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "box à thé"
+    angle: "coffrets et abonnements (box), pas la boite de conservation, deja traitee par /blog/boite-a-the/."
+    category: "Variétés de thé"
+    volume: 2000
+    kd: null
+    scheduled_date: "2026-11-20"
     status: todo
     published_date: null
     published_url_fr: null
@@ -297,50 +377,10 @@ articles:
     category: "Culture et rituels"
     volume: 1700
     kd: null
-    scheduled_date: "2026-11-10"
+    scheduled_date: "2026-11-24"
     status: todo
     published_date: null
     published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "tisane de thym danger"
-    category: "Bienfaits et santé"
-    volume: 4800
-    kd: null
-    scheduled_date: "2026-11-13"
-    status: done
-    published_date: "2026-11-13"
-    published_url_fr: "https://www.mamie-the.fr/blog/tisane-de-thym-danger/"
-    published_url_en: null
-    error: null
-  - kw: "the de marque"
-    category: "Variétés de thé"
-    volume: 2571
-    kd: null
-    scheduled_date: "2026-11-17"
-    status: done
-    published_date: "2026-11-17"
-    published_url_fr: "https://www.mamie-the.fr/blog/the-de-marque/"
-    published_url_en: null
-    error: null
-  - kw: "theiere en fonte"
-    category: "Préparation et matériel"
-    volume: 4000
-    kd: null
-    scheduled_date: "2026-11-20"
-    status: done
-    published_date: "2026-11-20"
-    published_url_fr: "https://www.mamie-the.fr/blog/theiere-en-fonte/"
-    published_url_en: null
-    error: null
-  - kw: "maté calebasse"
-    category: "Tisanes et plantes"
-    volume: 3600
-    kd: null
-    scheduled_date: "2026-11-24"
-    status: done
-    published_date: "2026-11-24"
-    published_url_fr: "https://www.mamie-the.fr/blog/mate-calebasse/"
     published_url_en: null
     error: null
   - kw: "theiere japonais"
@@ -355,35 +395,15 @@ articles:
     published_url_fr: null
     published_url_en: null
     error: null
-  - kw: "the minceur"
-    category: "Bienfaits et santé"
-    volume: 3000
-    kd: null
-    scheduled_date: "2026-12-01"
-    status: done
-    published_date: "2026-12-01"
-    published_url_fr: "https://www.mamie-the.fr/blog/the-minceur/"
-    published_url_en: null
-    error: null
   - kw: "services à thé"
     secondary_kw: ["service à thé en porcelaine"]
     category: "Variétés de thé"
     volume: 2380
     kd: null
-    scheduled_date: "2026-12-04"
+    scheduled_date: "2026-12-01"
     status: todo
     published_date: null
     published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "cuillere a the"
-    category: "Préparation et matériel"
-    volume: 3385
-    kd: null
-    scheduled_date: "2026-12-08"
-    status: done
-    published_date: "2026-12-08"
-    published_url_fr: "https://www.mamie-the.fr/blog/cuillere-a-the/"
     published_url_en: null
     error: null
   - kw: "tisane pour dormir"
@@ -391,30 +411,10 @@ articles:
     category: "Bienfaits et santé"
     volume: 2636
     kd: null
-    scheduled_date: "2026-12-11"
+    scheduled_date: "2026-12-04"
     status: todo
     published_date: null
     published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "chai the latte"
-    category: "Culture et rituels"
-    volume: 1807
-    kd: null
-    scheduled_date: "2026-12-15"
-    status: done
-    published_date: "2026-12-15"
-    published_url_fr: "https://www.mamie-the.fr/blog/chai-the-latte/"
-    published_url_en: null
-    error: null
-  - kw: "tisane de romarin danger"
-    category: "Bienfaits et santé"
-    volume: 2900
-    kd: null
-    scheduled_date: "2026-12-18"
-    status: done
-    published_date: "2026-12-18"
-    published_url_fr: "https://www.mamie-the.fr/blog/tisane-de-romarin-danger/"
     published_url_en: null
     error: null
   - kw: "thés chinois"
@@ -422,7 +422,7 @@ articles:
     category: "Culture et rituels"
     volume: 1690
     kd: null
-    scheduled_date: "2026-12-22"
+    scheduled_date: "2026-12-08"
     status: todo
     published_date: null
     published_url_fr: null
@@ -433,7 +433,7 @@ articles:
     category: "Variétés de thé"
     volume: 3327
     kd: null
-    scheduled_date: "2026-12-25"
+    scheduled_date: "2026-12-11"
     status: todo
     published_date: null
     published_url_fr: null
@@ -443,7 +443,7 @@ articles:
     category: "Préparation et matériel"
     volume: 1900
     kd: null
-    scheduled_date: "2026-12-29"
+    scheduled_date: "2026-12-15"
     status: todo
     published_date: null
     published_url_fr: null
@@ -454,7 +454,7 @@ articles:
     category: "Bienfaits et santé"
     volume: 2636
     kd: null
-    scheduled_date: "2027-01-01"
+    scheduled_date: "2026-12-18"
     status: todo
     published_date: null
     published_url_fr: null
@@ -464,7 +464,7 @@ articles:
     category: "Tisanes et plantes"
     volume: 1600
     kd: null
-    scheduled_date: "2027-01-05"
+    scheduled_date: "2026-12-22"
     status: todo
     published_date: null
     published_url_fr: null
@@ -476,7 +476,7 @@ articles:
     category: "Bienfaits et santé"
     volume: 5032
     kd: null
-    scheduled_date: "2027-01-08"
+    scheduled_date: "2026-12-25"
     status: todo
     published_date: null
     published_url_fr: null
@@ -488,7 +488,7 @@ articles:
     category: "Culture et rituels"
     volume: 920
     kd: null
-    scheduled_date: "2027-01-12"
+    scheduled_date: "2026-12-29"
     status: todo
     published_date: null
     published_url_fr: null
@@ -498,7 +498,7 @@ articles:
     category: "Variétés de thé"
     volume: 1600
     kd: null
-    scheduled_date: "2027-01-15"
+    scheduled_date: "2027-01-01"
     status: todo
     published_date: null
     published_url_fr: null
@@ -509,7 +509,7 @@ articles:
     category: "Tisanes et plantes"
     volume: 3100
     kd: null
-    scheduled_date: "2027-01-19"
+    scheduled_date: "2027-01-05"
     status: todo
     published_date: null
     published_url_fr: null
@@ -519,7 +519,7 @@ articles:
     category: "Bienfaits et santé"
     volume: 1700
     kd: null
-    scheduled_date: "2027-01-22"
+    scheduled_date: "2027-01-08"
     status: todo
     published_date: null
     published_url_fr: null
@@ -530,7 +530,7 @@ articles:
     category: "Variétés de thé"
     volume: 1500
     kd: null
-    scheduled_date: "2027-01-26"
+    scheduled_date: "2027-01-12"
     status: todo
     published_date: null
     published_url_fr: null
@@ -540,7 +540,7 @@ articles:
     category: "Préparation et matériel"
     volume: 1583
     kd: null
-    scheduled_date: "2027-01-29"
+    scheduled_date: "2027-01-15"
     status: todo
     published_date: null
     published_url_fr: null
@@ -550,7 +550,7 @@ articles:
     category: "Tisanes et plantes"
     volume: 1600
     kd: null
-    scheduled_date: "2027-02-02"
+    scheduled_date: "2027-01-19"
     status: todo
     published_date: null
     published_url_fr: null
@@ -560,7 +560,7 @@ articles:
     category: "Variétés de thé"
     volume: 1500
     kd: null
-    scheduled_date: "2027-02-05"
+    scheduled_date: "2027-01-22"
     status: todo
     published_date: null
     published_url_fr: null
@@ -570,7 +570,7 @@ articles:
     category: "Bienfaits et santé"
     volume: 1600
     kd: null
-    scheduled_date: "2027-02-09"
+    scheduled_date: "2027-01-26"
     status: todo
     published_date: null
     published_url_fr: null
@@ -580,7 +580,7 @@ articles:
     category: "Variétés de thé"
     volume: 1400
     kd: null
-    scheduled_date: "2027-02-12"
+    scheduled_date: "2027-01-29"
     status: todo
     published_date: null
     published_url_fr: null
@@ -590,7 +590,7 @@ articles:
     category: "Bienfaits et santé"
     volume: 1600
     kd: null
-    scheduled_date: "2027-02-16"
+    scheduled_date: "2027-02-02"
     status: todo
     published_date: null
     published_url_fr: null
@@ -601,7 +601,7 @@ articles:
     category: "Préparation et matériel"
     volume: 1000
     kd: null
-    scheduled_date: "2027-02-19"
+    scheduled_date: "2027-02-05"
     status: todo
     published_date: null
     published_url_fr: null
