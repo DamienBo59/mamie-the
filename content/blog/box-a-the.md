@@ -1,8 +1,8 @@
 ---
 title: "Box à thé : coffret ou abonnement, que choisir"
-date: 2026-11-20
-publishDate: 2026-11-20
-lastmod: 2026-11-20
+date: 2026-10-10T08:50:00+02:00
+publishDate: 2026-10-10T08:50:00+02:00
+lastmod: 2026-10-10T08:50:00+02:00
 description: "Coffret ou abonnement : les critères qui font une bonne box à thé, le calcul au gramme, le format, la fraîcheur et le piège des accessoires."
 excerpt: "Une box à thé peut être la meilleure porte d'entrée vers le vrac, ou une façon très chère d'acheter des sachets. Tout se joue sur quatre critères, et le prix n'en est qu'un."
 image: "/images/blog/box-a-the.webp"

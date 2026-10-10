@@ -1,8 +1,8 @@
 ---
 title: "Théière en fonte : ce qu'elle fait vraiment"
-date: 2026-10-23
-publishDate: 2026-10-23
-lastmod: 2026-10-23
+date: 2026-10-10T07:30:00+02:00
+publishDate: 2026-10-10T07:30:00+02:00
+lastmod: 2026-10-10T07:30:00+02:00
 description: "Émaillée ou non, sur le feu ou pas, pour quels thés : ce que change réellement une théière en fonte, et la confusion avec la bouilloire japonaise."
 excerpt: "J'en ai acheté une en croyant pouvoir la poser sur ma plaque. Première chose à comprendre : la théière en fonte du commerce n'est pas celle des livres."
 image: "/images/blog/theiere-en-fonte.webp"

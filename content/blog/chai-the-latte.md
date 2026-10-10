@@ -1,8 +1,8 @@
 ---
 title: "Chai thé latte : recette maison et épices"
-date: 2026-11-06
-publishDate: 2026-11-06
-lastmod: 2026-11-06
+date: 2026-10-10T08:10:00+02:00
+publishDate: 2026-10-10T08:10:00+02:00
+lastmod: 2026-10-10T08:10:00+02:00
 description: "Le chai thé latte maison : la recette au thé noir et aux épices entières, la différence avec le masala chai indien, et les erreurs qui le rendent fade."
 excerpt: "Le seul thé que je fais bouillir. Ça contredit tout ce que j'écris sur la température de l'eau, et c'est pourtant la bonne méthode, pour une raison précise."
 image: "/images/blog/chai-the-latte.webp"

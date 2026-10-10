@@ -1,8 +1,8 @@
 ---
 title: "Tisane de sauge : préparation et précautions"
-date: 2026-11-17
-publishDate: 2026-11-17
-lastmod: 2026-11-17
+date: 2026-10-10T08:40:00+02:00
+publishDate: 2026-10-10T08:40:00+02:00
+lastmod: 2026-10-10T08:40:00+02:00
 description: "Quelle sauge infuser, dosage, durée et couvercle, puis les précautions réelles : thuyone, grossesse, enfants, épilepsie, et ce qu'on ne peut pas promettre."
 excerpt: "La sauge est la tisane où la plante compte autant que la préparation : toutes les sauges ne s'infusent pas, et la plus courante contient une molécule à connaître."
 image: "/images/blog/tisane-de-sauge.webp"

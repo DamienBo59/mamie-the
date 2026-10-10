@@ -1,8 +1,8 @@
 ---
 title: "Calebasse à maté : choisir, culotter, entretenir"
-date: 2026-10-27
-publishDate: 2026-10-27
-lastmod: 2026-10-27
+date: 2026-10-10T07:40:00+02:00
+publishDate: 2026-10-10T07:40:00+02:00
+lastmod: 2026-10-10T07:40:00+02:00
 description: "Courge, bois, céramique, verre ou inox : quelle calebasse à maté choisir, comment culotter une calebasse naturelle, et comment éviter la moisissure."
 excerpt: "Ma première calebasse a moisi en dix jours, parce que je la rangeais comme une tasse. C'est un fruit séché, et il se traite comme tel."
 image: "/images/blog/mate-calebasse.webp"

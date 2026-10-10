@@ -1,8 +1,8 @@
 ---
 title: "Fouet à matcha : choisir et entretenir un chasen"
-date: 2026-11-13
-publishDate: 2026-11-13
-lastmod: 2026-11-13
+date: 2026-10-10T08:30:00+02:00
+publishDate: 2026-10-10T08:30:00+02:00
+lastmod: 2026-10-10T08:30:00+02:00
 description: "Nombre de brins, bambou, bain avant usage, rinçage, séchage et forme : tout ce qui compte pour choisir un fouet à matcha et le faire durer."
 excerpt: "Le chasen est la seule pièce du matériel à matcha qui s'use et se rachète. Bien choisi et bien traité, il dure une année. Mal traité, quelques semaines."
 image: "/images/blog/fouet-matcha.webp"

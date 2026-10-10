@@ -15,7 +15,7 @@ faq:
   - q: "Que contient un kit matcha ?"
     a: "Un kit standard réunit un bol large et à fond plat appelé chawan, un fouet en bambou appelé chasen, une cuillère en bambou appelée chashaku, et souvent un repose-fouet en céramique. Les kits plus complets ajoutent un petit tamis. Sur ces objets, le fouet est le seul qui n'a pas d'équivalent de substitution satisfaisant."
   - q: "Peut-on faire du matcha sans fouet en bambou ?"
-    a: "On peut mélanger la poudre autrement, mais on n'obtient pas le même résultat. Les cent et quelques brins très fins du chasen créent une mousse dense et stable qu'un mousseur à lait ou une fourchette ne reproduisent pas : ils donnent de grosses bulles qui retombent vite. Un mousseur électrique dépanne pour un matcha latte, beaucoup moins pour un matcha nature."
+    a: "On peut mélanger la poudre autrement, mais on n'obtient pas le même résultat. Les quatre-vingts à cent vingt brins très fins du chasen créent une mousse dense et stable qu'un mousseur à lait ou une fourchette ne reproduisent pas : ils donnent de grosses bulles qui retombent vite. Un mousseur électrique dépanne pour un matcha latte, beaucoup moins pour un matcha nature."
   - q: "Quelle différence entre matcha cérémonial et culinaire ?"
     a: "Le grade cérémonial provient de jeunes feuilles d'ombre, broyées à la meule de pierre : il est vert vif, doux, à peine amer, et se boit à l'eau. Le grade culinaire vient de feuilles plus tardives, il est plus terne, plus astringent, et il est conçu pour être mélangé à du lait ou intégré à une préparation. Le boire nature est une déception assurée."
   - q: "Comment entretenir un fouet à matcha ?"
@@ -38,13 +38,13 @@ Le matcha est le seul thé qui demande vraiment du matériel. Pour tous les autr
 
 ## Le fouet, seul objet vraiment irremplaçable
 
-Un **chasen** est taillé dans un seul morceau de bambou, fendu en cent brins ou davantage, très fins et recourbés.
+Un **chasen** est taillé dans un seul morceau de bambou, fendu en quatre-vingts à cent vingt brins très fins et recourbés.
 
 Ce n'est pas une coquetterie. Le matcha ne se dissout pas, il se met en suspension, et la mousse de surface se forme parce que ces brins extrêmement fins incorporent des micro-bulles d'air dans un liquide épais. Un mousseur à lait, une fourchette ou un petit fouet métallique donnent de **grosses bulles qui retombent en quelques secondes**, et une poudre qui redescend au fond du bol.
 
 C'est la différence entre un matcha qui tient et un matcha qui se sépare pendant qu'on le boit.
 
-Un chasen se choisit surtout par son nombre de brins : autour de 80 pour un usage courant, 100 ou 120 pour une mousse plus fine. Le bambou noirci ou blanchi relève du goût, pas de la performance.
+Un chasen se choisit surtout par son nombre de brins : autour de 80 pour un usage courant, 100 ou 120 pour une mousse plus fine. Le bambou noirci ou blanchi relève du goût, pas de la performance. Le choix, le trempage et l'entretien sont détaillés dans notre article consacré au [fouet à matcha](/blog/fouet-matcha/).
 
 **Son entretien est simple et non négociable.** Rinçage à l'eau chaude claire aussitôt après usage, jamais de savon, jamais de lave-vaisselle, jamais de trempage. Séchage à l'air sur son repose-fouet, qui maintient l'écartement des brins. Quelques brins cassent avec le temps, c'est normal et cela n'empêche pas de s'en servir.
 

@@ -1,7 +1,7 @@
 ---
 title: "Thé de marque : ce qu'on paie vraiment"
-date: 2026-10-20
-lastmod: 2026-10-20
+date: 2026-10-10T07:20:00+02:00
+lastmod: 2026-10-10T07:20:00+02:00
 description: "Le prix au kilo est le seul comparateur honnête entre un sachet de supermarché et une maison de thé. Ce qu'il révèle, et ce qui justifie réellement un prix élevé."
 excerpt: "Un sachet à trente centimes, c'est cent cinquante euros le kilo. C'est le calcul qui m'a fait quitter le supermarché, et il n'a rien d'évident."
 image: "/images/blog/the-de-marque.webp"

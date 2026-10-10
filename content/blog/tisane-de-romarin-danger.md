@@ -1,8 +1,8 @@
 ---
 title: "Tisane de romarin : les précautions réelles"
-date: 2026-11-10
-publishDate: 2026-11-10
-lastmod: 2026-11-10
+date: 2026-10-10T08:20:00+02:00
+publishDate: 2026-10-10T08:20:00+02:00
+lastmod: 2026-10-10T08:20:00+02:00
 description: "Ce que le référentiel européen signale sur la tisane de romarin : grossesse, enfants, voies biliaires, allergie, et la confusion avec l'huile essentielle."
 excerpt: "Le romarin a ses propres points de vigilance, différents de ceux du thym. Il y en a un, en particulier, que je n'avais jamais vu mentionné ailleurs."
 image: "/images/blog/tisane-de-romarin-danger.webp"
