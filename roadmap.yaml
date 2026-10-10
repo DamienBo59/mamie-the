@@ -346,9 +346,9 @@ articles:
     volume: 6000
     kd: null
     scheduled_date: "2026-11-13"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-11-13"
+    published_url_fr: "https://www.mamie-the.fr/blog/fouet-matcha/"
     published_url_en: null
     error: null
   - kw: "tisane de sauge"
@@ -357,9 +357,9 @@ articles:
     volume: 3500
     kd: null
     scheduled_date: "2026-11-17"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-11-17"
+    published_url_fr: "https://www.mamie-the.fr/blog/tisane-de-sauge/"
     published_url_en: null
     error: null
   - kw: "box à thé"
@@ -368,9 +368,9 @@ articles:
     volume: 2000
     kd: null
     scheduled_date: "2026-11-20"
-    status: todo
-    published_date: null
-    published_url_fr: null
+    status: done
+    published_date: "2026-11-20"
+    published_url_fr: "https://www.mamie-the.fr/blog/box-a-the/"
     published_url_en: null
     error: null
   - kw: "thé anglais"
